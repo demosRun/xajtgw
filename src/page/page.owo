@@ -6,6 +6,28 @@
   .nav-bar
     plug(_name="module60" _src="https://template.owo.ink/c2cab888fc67bf34.owo")
   plug(_name="module12" _src="https://template.owo.ink/fe00f64632a3ffbb.owo")
+  .conn
+    .w1200
+      .title-bar
+        span 要闻快报
+        .more(o-hover="grow")
+          a(href="#")
+      .mini-card-box.clear
+        .mini-card.fl
+          .title-bar
+            span 要闻快报
+            .more(o-hover="grow")
+              a(href="#")
+        .mini-card.fl
+          .title-bar
+            span 要闻快报
+            .more(o-hover="grow")
+              a(href="#")
+        .mini-card.fl
+          .title-bar
+            span 要闻快报
+            .more(o-hover="grow")
+              a(href="#")
   plug(_name="module2" _src="https://template.owo.ink/0d0151b82309f7a7.owo")
 </template>
 
@@ -32,5 +54,39 @@
   }
   .nav-bar {
     background-color: #f3353e;
+  }
+  .title-bar {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 58px;
+    color: #ec1b13;
+    background-image: url('@|title-line.png|');
+    .more {
+      background-image: url('@|more.png|');
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background-position: center;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .conn {
+    margin-top: 20px;
+  }
+  .mini-card {
+    width: 320px;
   }
 </style>
