@@ -1,0 +1,36 @@
+<template lang="pug">
+.home
+  .title-box
+    img.logo(src="@|logo.png|")
+    plug(_name="searchBar" _src="./src/page/searchBar.owo")
+  .nav-bar
+    plug(_name="module60" _src="https://template.owo.ink/c2cab888fc67bf34.owo")
+  plug(_name="module12" _src="https://template.owo.ink/fe00f64632a3ffbb.owo")
+  plug(_name="module2" _src="https://template.owo.ink/0d0151b82309f7a7.owo")
+</template>
+
+<script>
+  module.exports = {
+
+  }
+</script>
+
+
+<style lang="less">
+  .title-box {
+    height: 120px;
+    position: relative;
+    background-color: #f55b3d;
+    .logo {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+    }
+  }
+  .nav-bar {
+    background-color: #f3353e;
+  }
+</style>

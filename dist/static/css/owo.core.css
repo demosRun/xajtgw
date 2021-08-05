@@ -1,0 +1,234 @@
+body, html, .page, .page-box {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.owo-animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.owo-animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owo-animation-forward {
+  z-index: 99;
+}
+
+img {
+  border: none;
+}
+
+[route-active="false"] {
+  display: none;
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+form {
+  width: 243px;
+  height: 49px;
+  background-image: url('../resource/search-bar.png');
+  position: absolute;
+  left: 850px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.search-bar .searchkey {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 30px;
+  right: 10px;
+  width: 160px;
+  font-size: 16px;
+}
+
+.search-bar .searchbutton {
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  margin: 13px;
+  cursor: pointer;
+}
+.main-bar {
+  width: 1000px;
+  font-size: 18px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.main-bar a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-bar a:link,
+.main-bar a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-bar a:hover {
+  color: white;
+  -webkit-text-decoration: #ffffff;
+          text-decoration: #ffffff;
+}
+
+.main-bar a {
+  color: white;
+  display: inline-block;
+  margin: 0;
+  line-height: 60px;
+  text-align: center;
+  height: 60px;
+  width: 120px;
+}
+
+.main-bar a.active {
+  background-color: #f03821;
+  font-size: 20px;
+  border-bottom: 4px solid white;
+}
+.swiper-box {
+  height: 34vw;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.swiper-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-box a {
+  display: block;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-box .swiper-wrapper .text {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  line-height: 30px;
+  padding: 0 10px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.swiper-box .swiper-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-box .swiper-pagination-switch {
+  width: 20px;
+  height: 8px;
+  margin: 0 3px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  transition: width 0.5s;
+  box-shadow: 0px 1px 2px #555 inset;
+}
+
+.swiper-box .swiper-active-switch {
+  background-color: #ffb81f;
+  width: 60px;
+}
+
+.swiper-box a {
+  text-decoration: none;
+}
+
+.swiper-box .swiper-slide {
+  position: relative;
+}
+
+.swiper-box .pagination {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  height: 10px;
+  text-align: center;
+}
+#copyright {
+  height: 60px;
+  padding: 40px 0;
+  position: relative;
+  font-size: 14px;
+  height: 60px;
+  color: #000000;
+  z-index: 999;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  background-color: transparent;
+}
+.title-box {
+  height: 120px;
+  position: relative;
+  background-color: #f55b3d;
+}
+
+.title-box .logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.nav-bar {
+  background-color: #f3353e;
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <!-- 页面的元信息 -->
+    <title>测试预览页面</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=1000, user-scalable=yes"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="filetype" content="1"/>
+    <meta name="publishedtype" content="1"/>
+    <meta name="pagetype" content="2"/>
+    <meta name="description" content="{TAG_59447_TAG}"/>
+    <meta name="keywords" content="{TAG_59446_TAG}"/>
+    <meta name="catalogs" content="{TAG_83943_TAG}"/>
+    
+      <!-- 页面主样式文件 -->
+      <link charset="utf-8"  rel="stylesheet" href="./static/css/owo.core.css">
+      
+    <!-- 附属css文件 -->
+    <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
+    <link rel="stylesheet" href="https://cunchu.site/owo/style/idangerous.swiper2.7.6.css" charset="utf-8">
+      
+  </head>
+  <body>
+    
+    <!-- 页面[page]-->
+    <div class="home page" template="page" style="display: block;"><div class="title-box"><img class="logo" src="./static/resource/logo.png"><form class="search-bar" action="http://search.chinaxiongan.cn/chinaxiongan/search.do" name="searchForm" method="post" target="_blank">
+    <input type="hidden" name="pageNum" value="1">
+    <input type="hidden" name="pageCode" id="pageCode" value="gb2312">
+  <input type="text" class="searchkey" name="keyword" id="keyword" value="">
+  <input type="image" class="searchbutton" src="./static/resource/search-button.png">
+</form></div><div class="nav-bar"><div class="main-bar" template="module60">
+    <a target="_blank" class="active" href="#">首页</a>
+    <a target="_blank" href="http://www.people.com.cn/">集团综述</a><a target="_blank" href="http://www.people.com.cn/">新闻资讯</a><a target="_blank" href="http://www.people.com.cn/">党史学习</a><a target="_blank" href="http://www.people.com.cn/">招标采购</a><a target="_blank" href="http://www.people.com.cn/">人才招聘</a><a target="_blank" href="http://www.people.com.cn/">公式通报</a>
+  </div></div><div class="swiper-box" template="module12"><div class="swiper-container clear"><div class="swiper-wrapper"><div class="swiper-slide"><a href="#"><img src="https://cunchu.site/upload/de11264d737d7ae2.jpeg" width="550" height="320"></a></div><div class="swiper-slide"><a href="#"><img src="https://cunchu.site/upload/b166f050c3f2d45d.jpeg" width="550" height="320"></a></div><div class="swiper-slide"><a href="#"><img src="https://cunchu.site/upload/de78c150e6a6944d.jpeg" width="550" height="320"></a></div></div><div class="pagination"></div></div></div><div id="copyright">人 民 网 版 权 所 有 ，未 经 书 面 授 权 禁 止 使 用<br>Copyright © 1997-2021 by www.people.com.cn. all rights reserved</div></div>
+    
+<!-- 框架script文件 -->
+<script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+owo.script = {
+  "page": {
+    "template": {
+      "module12": {
+        "created": function created() {
+          var _this = this;
+
+          // 轮播图展示区域swiper
+          setTimeout(function () {
+            new Swiper(_this.$el.getElementsByClassName('swiper-container')[0], {
+              pagination: _this.$el.getElementsByClassName('pagination')[0],
+              loop: true,
+              autoplay: 3000,
+              paginationClickable: true
+            });
+          }, 0);
+        }
+      }
+    }
+  }
+};
+</script>
+
+    <script src="https://cunchu.site/owo/script/idangerous.swiper2.7.6.min.js" type="text/javascript"  charset="UTF-8"></script>
+    <script src="./static/js/main.js" type="text/javascript"  charset="UTF-8"></script>
+
+  </body>
+</html>

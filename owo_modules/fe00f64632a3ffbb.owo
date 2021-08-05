@@ -1,0 +1,101 @@
+<template lang="pug">
+.swiper-box
+  .swiper-container.clear
+    .swiper-wrapper
+      .swiper-slide(:for="data._swiperBoxList")
+        a(href="#")
+          img(src="{value.src}" width="550" height="320")
+    .pagination
+</template>
+
+<script>
+  module.exports = {
+    data: {
+      _swiperBoxList: [
+        {src:"https://cunchu.site/upload/de11264d737d7ae2.jpeg", text: "全省“法治进校园”巡讲团首站——晋中"},
+        {src:"https://cunchu.site/upload/b166f050c3f2d45d.jpeg", text: "全省“法治进校园”巡讲团首站——晋中"},
+        {src:"https://cunchu.site/upload/de78c150e6a6944d.jpeg", text: "全省“法治进校园”巡讲团首站——晋中"},
+      ]
+    },
+    created: function () {
+      // 轮播图展示区域swiper
+      setTimeout(() => {
+        new Swiper(this.$el.getElementsByClassName('swiper-container')[0], {
+          pagination: this.$el.getElementsByClassName('pagination')[0],
+          loop: true,
+          autoplay: 3000,
+          paginationClickable: true
+        })
+      }, 0)
+    }
+  }
+</script>
+
+
+<style lang="less">
+.swiper-box {
+  height: 34vw;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  a {
+    display: block;
+    color: white;
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-wrapper .text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    line-height: 30px;
+    padding: 0 10px;
+    width: 100%;
+    font-size: 14px;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+.swiper-pagination-switch {
+  width: 20px;
+  height: 8px;
+  margin: 0 3px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  transition: width 0.5s;
+  box-shadow: 0px 1px 2px #555 inset;
+}
+.swiper-active-switch {
+  background-color: #ffb81f;
+  width: 60px;
+}
+a {
+  text-decoration: none;
+}
+.swiper-slide {
+  position: relative;
+}
+.pagination{
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  height: 10px;
+  text-align: center;
+}
+</style>
