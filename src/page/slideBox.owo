@@ -1,0 +1,220 @@
+<template>
+<div class="slideBox" style="display: block; left: -1297px;">
+	<div class="shine"><em></em><i></i></div>
+	<div class="open"><span>邀您共创雄安智慧生活</span></div>
+    <ul><li><img src="http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slidePic01.jpg"><span class="icon01">政务与公共服务</span><div class="showText" style="top: 525px;"><p>聚焦新区开发建设需求、公共服务需求及社会治理需要，向上贯彻落实中央方针政策和省委省政府工作部署，对接总体规划、专项规划及各专项研究，向下对接产业导入、市场培育、基础设施建设、生态环保等工作，保障规划任务落地，为新区管理提供全方位市场化服务，满足新区“小政府大社会”治理模式需求。</p></div></li>
+<li><img src="http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slidePic03.jpg"><span class="icon03">金融与投资</span><div class="showText" style="top: 525px;"><p><a href="http://www.chinaxiongan.cn/GB/421102/421164/index.html" target="_blank">发起组建金融机构，设置特色金融企业，创新信用使用方式，提供优质金融服务，为新区开发建设提供融资保障，适时对外投资。先期开展基金和资产管理业务，中长期布局银行、保险、证券、信托等金融核心业务，根据集团发展战略和实际进行投资。</a></p></div></li>
+<li><img src="http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slidePic04.jpg"><span class="icon04">基础设施</span><div class="showText" style="top: 525px;"><p><a href="http://www.chinaxiongan.cn/GB/421102/421103/index.html" target="_blank">加快培育基础设施建设运营管理能力，对于集团承担在“一张白纸”上建设新区的历史使命尤为重要。基础设施板块涵盖外围骨干交通路网、市政路桥、轨道交通、管网、综合管廊、通信、供水、污水处理和再生水利用、固废处理、电力、供热、燃气、新能源等。</a></p></div></li>
+<li><img src="http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slidePic06.jpg"><span class="icon06">生态环境建设<br>和绿色发展</span><div class="showText" style="top: 525px;"><p><a href="http://www.chinaxiongan.cn/GB/421102/421153/index.html" target="_blank">新区“蓝绿空间”建设任务重、资金投入量大、短期效果不明显，亟需完善生态环境和绿色发展板块，承接《白洋淀生态环境治理和保护规划》《雄安新区森林城市专项规划》落地。</a></p></div></li>
+<li><img src="http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slidePic02.jpg"><span class="icon02">城市发展<br>与城市资源运营</span><div class="showText" style="top: 525px;"><p><a href="http://www.chinaxiongan.cn/GB/421102/421165/index.html" target="_blank">摆脱对土地财政的依赖，实现土地和房产等城市资产国有化，实现“以租为主、以售为辅”的全新住房管理目标，对城市建筑进行全生命周期运行维护管理。主要承担新区城市建设住宅、商业、商务及公共服务等建筑开发，运维管理资产物业，推行绿色建筑标准，构建低碳绿色城市指标体系，搭建共生共长的孪生数字建筑等。</a></p></div></li>
+<li><img src="http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slidePic05.jpg"><span class="icon05">数字城市</span><div class="showText" style="top: 525px;"><p><a href="http://www.chinaxiongan.cn/GB/421102/421149/index.html" target="_blank">通过多方数据采集和汇聚，建设可视化数字孪生城市，开展雄安智慧城市发展规划和大数据标准体系建设，挖掘利用雄安数字资产，打造城市智慧运行的载体。</a></p></div></li></ul>
+</div>
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+        $(document).on("click",".slideBox .open",function(){
+        $(".slideBox").animate({left:"0px"},"slow");
+        $(this).addClass("opened");
+    });
+    $(document).on("click",".slideBox .shine",function(){
+        $(".slideBox").animate({left:"0px"},"slow");
+        $(".slideBox .open").addClass("opened");
+    });
+    $(document).on("mouseleave",".slideBox",function(){
+        if(!$(".slideBox .open").hasClass("opened")){
+        var slideBoxTime=setTimeout(function() {
+            $(".slideBox").animate({left:"-1297px"},"slow");
+        }, 500);
+        }
+    });
+    $(document).on("mouseover",".slideBox",function(){
+        $(".slideBox .open").removeClass("opened");
+    });
+
+    $.each($(".slideBox ul li"),function(){
+        var _timer = null;
+        var ele = $(this).bind({
+            mouseenter: function(e){
+                if(_timer)clearTimeout(_timer);
+                _timer = setTimeout(function(){
+                    ele.find("div.showText").animate({
+                        "top" :	"0px"
+                    },500)
+                },300)
+            },
+            mouseleave: function(e){
+                if(_timer)clearTimeout(_timer);
+                _timer = setTimeout(function(){
+                    ele.find("div.showText").animate({
+                        "top" :	"525px"
+                    },500)
+                },100)
+            }
+        })
+    })
+    $(".slideBox a").click(function() {
+        $(".slideBox .open").addClass("opened");
+    });
+    }
+  }
+</script>
+
+
+<style lang="less">
+.slideBox{
+	width:1397px;
+	height:526px;
+	/*position:absolute;
+	top:341px;*/
+	position:fixed;
+	top:20%;
+	left:-1297px;
+	z-index:99;
+	display:none;
+}
+.slideBox .shine{
+	width:70px;
+	height:120px;
+	position:absolute;
+	right:-40px;
+	bottom:0px;
+	z-index:100;
+}
+.slideBox .shine em{
+	display:inline-block;
+	width:59px;
+	height:59px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideShineDot.png) top center no-repeat;
+	cursor: pointer;
+	-webkit-animation:shineDot 2.0s linear infinite alternate;
+	animation:shineDot 2.0s linear infinite alternate;
+}
+.slideBox .shine i{
+	display:inline-block;
+	width:63px;
+	height:98px;
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	background:url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideShineHand.png) top center no-repeat;
+	cursor: pointer;
+	-webkit-animation:shineHand 2.0s linear infinite alternate;
+	animation:shineHand 2.0s linear infinite alternate;
+}
+@-webkit-keyframes shineDot{
+  0%{-webkit-transform:scale(1);}
+  50%{-webkit-transform:scale(1.2);}
+  100%{-webkit-transform:scale(1);}
+}
+@keyframes shineDot{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.2);}
+  100%{transform:scale(1);}
+}
+@-webkit-keyframes shineHand{
+  0%{transform:scale(1.02);}
+  50%{transform:scale(1);}
+  100%{transform:scale(1.02);}
+}
+@keyframes shineHand{
+  0%{transform:scale(1.02);}
+  50%{transform:scale(1);}
+  100%{transform:scale(1.02);}
+}
+
+.slideBox .open{
+	width:100px;
+	height:526px;
+	float:right;
+	background:#4c97dc;
+	border-radius: 0 45px 45px 0;
+	position:relative;
+	cursor:pointer;
+}
+.slideBox .open span{
+	position:absolute;
+	width:30px;
+	top:80px;
+	left:50%;
+	margin-left:-18px;
+	/*background:url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideOpen.png) top center no-repeat;
+	*background:url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideOpen.png) top right no-repeat;*/
+	padding-top:30px;
+	font:normal 30px/30px "SimHei";
+	color:#fff;
+	writing-mode:tb-rl;
+}
+.slideBox ul{
+	display:block;
+	position:relative;
+	float:left;
+	background:#056110;
+	padding-right:1px;
+}
+.slideBox ul li{
+	width:215px;
+	height:526px;
+	float:left;
+	background:#45a936;
+	padding-left:1px;
+	position:relative;
+	overflow:hidden;
+}
+.slideBox ul li span{
+	display:block;
+	width:215px;
+	position:absolute;
+	top:190px;
+	padding-top:100px;
+	font:normal 24px/36px "KaiTi";
+	text-align:center;
+	color:#fff;
+}
+.slideBox ul li span.icon01{
+	background:url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideIcon01.png) top center no-repeat;
+}
+.slideBox ul li span.icon02{
+	background:url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideIcon02.png) top center no-repeat;
+}
+.slideBox ul li span.icon03{
+	background:url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideIcon03.png) top center no-repeat;
+}
+.slideBox ul li span.icon04{
+	background:url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideIcon04.png) top center no-repeat;
+}
+.slideBox ul li span.icon05{
+	background:url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideIcon05.png) top center no-repeat;
+}
+.slideBox ul li span.icon06{
+	background:url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideIcon06.png) top center no-repeat;
+}
+.slideBox ul li div.showText{
+	width:215px;
+	height:525px;
+	background:url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideShowBg.png) top center repeat;
+	position:absolute;
+	top:525px;
+	left:0px;
+	/*transition: top 500ms;
+	-moz-transition: top 500ms;
+	-webkit-transition: top 500ms;
+	-o-transition: top 500ms;*/
+}
+.slideBox ul li.hover div.showText{
+	top:0px;
+}
+.slideBox ul li div.showText p{
+	padding:65px 15px 20px 15px;
+	font:normal 18px/160% "SimHei";
+	color:#fff;
+	text-align: justify;
+}
+.slideBox ul li div.showText p a{
+	color:#fff;
+}
+</style>

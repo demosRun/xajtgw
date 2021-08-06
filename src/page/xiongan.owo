@@ -1,0 +1,668 @@
+<template>
+<div class="circle_Box">
+	<div class="circleCenter rotateNext"></div>
+	<div class="circleBig rotatePrev"></div>
+	<span class="text"></span>
+	<span class="xionganBegin" o-hover="grow"></span>
+	<div class="robot jiqirenAnimation"></div>
+	<!--探索弹出-->
+	<div class="tipBox" style="transform: scale(0, 0);">
+		<div class="tipBoxBg"></div>
+			<span class="tipText1">我是小安，您的向导</span>
+			<span class="tipText2">欢迎来到雄安</span>
+			<span class="tipText3">请选择探索路线</span>
+			<span class="tipText4"><img src="http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/close.png" alt=""></span>
+			<!-- <p><span class="tipNavButton1"></span><span class="tipNavButton2"></span></p> -->
+			<span class="tipIcon_1 tipIconBox" data="1" style="opacity: 0;"><a href="http://www.chinaxiongan.cn/GB/425251/index.html" target="_blank"></a></span>
+			<span class="tipIcon_2 tipIconBox" data="2" style="opacity: 0;"><a href="/GB/419268/419272/index.html" target="_blank"></a></span>
+			<span class="tipIcon_3 tipIconBox" data="3" style="opacity: 0;"><a href="/GB/419268/419274/index.html" target="_blank"></a></span>
+			<span class="tipIcon_4 tipIconBox" data="4" style="opacity: 0;"><a href="/GB/419268/419271/index.html" target="_blank"></a></span>
+			<span class="tipIcon_5 tipIconBox" data="5" style="opacity: 0;"><a href="/GB/419268/419273/index.html" target="_blank"></a></span>
+			<span class="tipIcon_6 tipIconBox" data="6" style="opacity: 0;"><a href="/GB/419268/419275/index.html" target="_blank"></a></span>
+			<span class="tipIcon_7 tipIconBox" data="7" style="opacity: 0;"><a href="/GB/419268/419276/index.html" target="_blank"></a></span>
+			<span class="tipIcon_8 tipIconBox" data="8" style="opacity: 0;"><a href="/GB/419268/419269/index.html" target="_blank"></a></span>
+			<span class="tipIcon_9 tipIconBox" data="9" style="opacity: 0;"><a href="/GB/419268/419277/index.html" target="_blank"></a></span>
+			<span class="tipIcon_10 tipIconBox" data="10" style="opacity: 0;"><a href="/GB/419268/419279/index.html" target="_blank"></a></span>
+			<span class="tipIcon_11 tipIconBox" data="11" style="opacity: 0;"><a href="/GB/419268/419364/index.html" target="_blank"></a></span>
+			<div class="tipIconText" id="text1" style="transform: scale(0, 0);">
+			</div>
+			<div class="tipIconText" id="text2" style="transform: scale(0, 0);">
+			</div>
+			<div class="tipIconText" id="text3" style="transform: scale(0, 0);">
+			</div>
+			<div class="tipIconText" id="text4" style="transform: scale(0, 0);">
+			</div>
+			<div class="tipIconText" id="text5" style="transform: scale(0, 0);">
+			</div>
+			<div class="tipIconText" id="text6" style="transform: scale(0, 0);">
+			</div>
+			<div class="tipIconText" id="text7" style="transform: scale(0, 0);">
+			</div>
+			<div class="tipIconText" id="text8" style="transform: scale(0, 0);">
+			</div>
+			<div class="tipIconText" id="text9" style="transform: scale(0, 0);">
+			</div>
+			<div class="tipIconText" id="text10" style="transform: scale(0, 0);">
+			</div>
+			<div class="tipIconText" id="text11" style="transform: scale(0, 0);">
+			</div>
+	</div>
+	<!--结束弹出-->
+</div>
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+
+    }
+  }
+</script>
+
+
+<style lang="less">
+.circle_Box {
+	width: 1000px;
+	height: 510px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 88
+}
+
+.circle_Box .circleCenter {
+	width: 327px;
+	height: 327px;
+	background: url(@|nei.png|) no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 86px;
+	left: 50%;
+	margin-left: -168px
+}
+
+.circle_Box .circleBig {
+	width: 444px;
+	height: 438px;
+	background: url(@|wai.png|) no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 26px;
+	left: 50%;
+	margin-left: -222px
+}
+
+.circle_Box .text {
+	display: inline-block;
+	width: 556px;
+	height: 90px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/text.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 185px;
+	left: 50%;
+	margin-left: -278px
+}
+
+.circle_Box .xionganBegin {
+	display: inline-block;
+	width: 241px;
+	height: 53px;
+	background: url(@|start.png|) no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 302px;
+	left: 50%;
+	z-index: 89;
+	margin-left: -120px;
+	cursor: pointer
+}
+
+.circle_Box .robot {
+	width: 278px;
+	height: 363px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/robot.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	right: -15px;
+	bottom: -60px;
+	z-index: 99999;
+	cursor: pointer
+}
+
+.playBox {
+	width: 99%;
+	position: absolute;
+	top: 30px;
+	z-index: 98;
+	height: 230px
+}
+
+.playBox .playBoxSwiper {
+	width: 95%;
+	height: 130px;
+	margin: 0 0 0 4%;
+	overflow: hidden
+}
+
+.playBox .leftButton {
+	display: inline-block;
+	width: 14px;
+	height: 26px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/6index/left_b.png) no-repeat;
+	position: absolute;
+	top: 160px;
+	left: 0px;
+	cursor: pointer
+}
+
+.playBox .rightButton {
+	display: inline-block;
+	width: 14px;
+	height: 26px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/6index/right_b.png) no-repeat;
+	position: absolute;
+	top: 160px;
+	right: 0px;
+	cursor: pointer
+}
+
+.playBox h3 {
+	padding: 15px 0 30px 0
+}
+
+.playBox div.swiper-slide {
+	width: 277px;
+	height: 128px;
+	margin: 0 auto;
+	cursor: pointer;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/6index/bo_bg.png) no-repeat
+}
+
+.playBox div.swiper-slide span {
+	display: inline-block;
+	width: 275px;
+	height: 89px;
+	border-radius: 15px 0 0 0;
+	position: relative;
+	overflow: hidden
+}
+
+.playBox div.swiper-slide span b {
+	display: inline-block;
+	width: 53px;
+	height: 53px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/6index/play.png) no-repeat;
+	position: absolute;
+	top: 20px;
+	left: 110px
+}
+
+.playBox div.swiper-slide p {
+	text-align: center;
+	width: 277px;
+	margin-top: 0px;
+	color: #fff
+}
+
+.playBox div.swiper-slide:hover img {
+	-webkit-animation: animationMove 1s ease forwards;
+	animation: animationMove 1s ease forwards
+}
+.rotatePrev {
+	-webkit-animation: rotatePrev 30s linear infinite;
+	animation: rotatePrev 30s linear infinite
+}
+
+@-webkit-keyframes rotatePrev {
+	0% {
+		-webkit-transform: rotate(0)
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg)
+	}
+}
+
+@keyframes rotatePrev {
+	0% {
+		transform: rotate(0)
+	}
+
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+.rotateNext {
+	-webkit-animation: rotateNext 30s linear infinite;
+	animation: rotateNext 30s linear infinite
+}
+
+@-webkit-keyframes rotateNext {
+	0% {
+		-webkit-transform: rotate(0)
+	}
+
+	100% {
+		-webkit-transform: rotate(-360deg)
+	}
+}
+
+@keyframes rotateNext {
+	0% {
+		transform: rotate(0)
+	}
+
+	100% {
+		transform: rotate(-360deg)
+	}
+}
+.tipBox {
+	width: 1000px;
+	height: 510px;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -500px;
+	z-index: 999;
+	display: none
+}
+
+.tipBox span a {
+	display: inline-block;
+	width: 100%;
+	height: 100%
+}
+
+.tipBox .tipIconText {
+	width: 300px;
+	height: 180px;
+	position: absolute;
+	top: 160px;
+	left: 50%;
+	background: #fff;
+	z-index: 9999;
+	margin-left: -150px;
+	display: none
+}
+
+.tipBox #text1 {
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s1.png) no-repeat;
+	background-size: cover
+}
+
+.tipBox #text2 {
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s2.png) no-repeat;
+	background-size: cover
+}
+
+.tipBox #text3 {
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s3.png) no-repeat;
+	background-size: cover
+}
+
+.tipBox #text4 {
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s4.png) no-repeat;
+	background-size: cover
+}
+
+.tipBox #text5 {
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s5.png) no-repeat;
+	background-size: cover
+}
+
+.tipBox #text6 {
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s6.png) no-repeat;
+	background-size: cover
+}
+
+.tipBox #text7 {
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s7.png) no-repeat;
+	background-size: cover
+}
+
+.tipBox #text8 {
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s8.png) no-repeat;
+	background-size: cover
+}
+
+.tipBox #text9 {
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s9.png) no-repeat;
+	background-size: cover
+}
+
+.tipBox #text10 {
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s10.png) no-repeat;
+	background-size: cover
+}
+
+.tipBox #text11 {
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s11.png) no-repeat;
+	background-size: cover
+}
+
+.tipBox .tipBoxBg {
+	width: 650px;
+	height: 610px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/cir_bg.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	margin-left: -320px;
+	z-index: 1
+}
+
+.tipBox .tipText1 {
+	display: inline-block;
+	width: 256px;
+	height: 37px;
+	position: absolute;
+	top: 170px;
+	left: 50%;
+	opacity: 0;
+	color: #00ffc5;
+	text-align: center;
+	font-size: 22px;
+	margin-left: -128px;
+	z-index: 10
+}
+
+.tipBox .tipText2 {
+	display: inline-block;
+	width: 355px;
+	height: 55px;
+	position: absolute;
+	top: 210px;
+	left: 50%;
+	color: #fff;
+	font-size: 34px;
+	text-align: center;
+	opacity: 0;
+	margin-left: -177px;
+	z-index: 10;
+	font-weight: bold
+}
+
+.tipBox .tipText3 {
+	display: inline-block;
+	width: 353px;
+	height: 44px;
+	position: absolute;
+	top: 260px;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	left: 50%;
+	opacity: 0;
+	margin-left: -177px;
+	z-index: 10
+}
+
+.tipBox .katong {
+	display: inline-block;
+	width: 300px;
+	height: 426px;
+	position: absolute;
+	top: 370px;
+	left: 81%;
+	opacity: 0;
+	margin-left: -177px;
+	z-index: 11;
+	cursor: pointer;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/katong.png) no-repeat top center;
+	background-size: cover
+}
+
+.tipBox span.tipIcon_1 {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/1.png) no-repeat;
+	background-size: cover;
+	border-radius: 50px;
+	position: absolute;
+	top: 305px;
+	left: 305px;
+	z-index: 11;
+	cursor: pointer
+}
+
+.tipBox span.tipIcon_2 {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/2.png) no-repeat;
+	background-size: cover;
+	border-radius: 50px;
+	position: absolute;
+	top: 305px;
+	left: 305px;
+	z-index: 11;
+	cursor: pointer
+}
+
+.tipBox span.tipIcon_3 {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/3.png) no-repeat;
+	background-size: cover;
+	border-radius: 50px;
+	position: absolute;
+	top: 305px;
+	left: 305px;
+	z-index: 11;
+	cursor: pointer
+}
+
+.tipBox span.tipIcon_4 {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/4.png) no-repeat;
+	background-size: cover;
+	border-radius: 50px;
+	position: absolute;
+	top: 305px;
+	left: 305px;
+	z-index: 11;
+	cursor: pointer
+}
+
+.tipBox span.tipIcon_5 {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/5.png) no-repeat;
+	background-size: cover;
+	border-radius: 50px;
+	position: absolute;
+	top: 305px;
+	left: 305px;
+	z-index: 11;
+	cursor: pointer
+}
+
+.tipBox span.tipIcon_6 {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/6.png) no-repeat;
+	background-size: cover;
+	border-radius: 50px;
+	position: absolute;
+	top: 305px;
+	left: 305px;
+	z-index: 11;
+	cursor: pointer
+}
+
+.tipBox span.tipIcon_7 {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/7.png) no-repeat;
+	background-size: cover;
+	border-radius: 50px;
+	position: absolute;
+	top: 305px;
+	left: 305px;
+	z-index: 11;
+	cursor: pointer
+}
+
+.tipBox span.tipIcon_8 {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/8.png) no-repeat;
+	background-size: cover;
+	border-radius: 50px;
+	position: absolute;
+	top: 305px;
+	left: 305px;
+	z-index: 11;
+	cursor: pointer
+}
+
+.tipBox span.tipIcon_9 {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/9.png) no-repeat;
+	background-size: cover;
+	border-radius: 50px;
+	position: absolute;
+	top: 305px;
+	left: 305px;
+	z-index: 11;
+	cursor: pointer
+}
+
+.tipBox span.tipIcon_10 {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/10.png) no-repeat;
+	background-size: cover;
+	border-radius: 50px;
+	position: absolute;
+	top: 305px;
+	left: 305px;
+	z-index: 11;
+	cursor: pointer
+}
+
+.tipBox span.tipIcon_11 {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/11.png) no-repeat;
+	border-radius: 50px;
+	background-size: cover;
+	position: absolute;
+	top: 305px;
+	left: 305px;
+	z-index: 11;
+	cursor: pointer
+}
+
+.tipBox span.tipIcon_12 {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background: #ccc;
+	border-radius: 50px;
+	position: absolute;
+	top: 305px;
+	left: 305px;
+	z-index: 11
+}
+
+.tipBox span.tipIcon_13 {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background: #ccc;
+	border-radius: 50px;
+	position: absolute;
+	top: 500px;
+	left: 900px;
+	z-index: 11
+}
+
+.tipBox span.tipIcon_14 {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background: #ccc;
+	border-radius: 50px;
+	position: absolute;
+	top: 500px;
+	left: 900px;
+	z-index: 11
+}
+
+.tipBox span.tipIcon_15 {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background: #ccc;
+	border-radius: 50px;
+	position: absolute;
+	top: 500px;
+	left: 900px;
+	z-index: 11
+}
+
+.tipBox .closeTip {
+	display: inline-block;
+	width: 78px;
+	height: 78px;
+	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/closetip.png) no-repeat;
+	position: absolute;
+	bottom: 100px;
+	right: 200px;
+	cursor: pointer;
+	z-index: 11
+}
+.tipBox .tipText4 {
+    display: inline-block;
+    width: 353px;
+    height: 44px;
+    position: absolute;
+    top: 310px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    left: 50%;
+    opacity: 0;
+    margin-left: -177px;
+    z-index: 10;
+}
+.jiqirenAnimation {
+	-webkit-animation: jiqirenAnimation 1s infinite;
+	animation: jiqirenAnimation 1s infinite
+}
+
+@-webkit-keyframes jiqirenAnimation {
+	0% {
+		background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/robot.png) no-repeat bottom left
+	}
+
+	100% {
+		background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/robot1.png) no-repeat bottom left
+	}
+}
+
+@keyframes jiqirenAnimation {
+	0% {
+		background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/robot.png) no-repeat bottom left
+	}
+
+	100% {
+		background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/robot1.png) no-repeat bottom left
+	}
+}
+</style>

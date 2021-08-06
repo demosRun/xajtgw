@@ -6,28 +6,110 @@
   .nav-bar
     plug(_name="module60" _src="https://template.owo.ink/c2cab888fc67bf34.owo")
   plug(_name="module12" _src="https://template.owo.ink/fe00f64632a3ffbb.owo")
+  //- 左右浮动条
+  plug(_name="slideBox" _src="./src/page/slideBox.owo")
+  .right-show-box
+    a(href="#")
+      img(src="@|right-show.png|")
   .conn
     .w1200
       .title-bar
         span 要闻快报
         .more(o-hover="grow")
           a(href="#")
-      .mini-card-box.clear
+      .hover-show-box.clear
+        img.fl.show(src="http://www.people.com.cn/NMediaFile/2021/0806/MAIN202108060917331965054780576.jpg")
+        .right.fr
+          .right-item
+            h3 雄安集团“安全质量日”活动举办
+            p 联合体不断创新完善产业链，探索交叉融合的发展运行模式，进一步优化联合体产业连接机制。
+          .right-item
+            h3 雄安集团“安全质量日”活动举办
+            p 联合体不断创新完善产业链，探索交叉融合的发展运行模式，进一步优化联合体产业连接机制。
+          .right-item
+            h3 雄安集团“安全质量日”活动举办
+            p 联合体不断创新完善产业链，探索交叉融合的发展运行模式，进一步优化联合体产业连接机制。
+          .right-item
+            h3 雄安集团“安全质量日”活动举办
+            p 联合体不断创新完善产业链，探索交叉融合的发展运行模式，进一步优化联合体产业连接机制。
+      .mini-card-box.mini-card-box-3.clear
         .mini-card.fl
           .title-bar
             span 要闻快报
             .more(o-hover="grow")
               a(href="#")
+          ul.news-list
+            li
+              a(href="#") “十月突破一线行”每日动态
+            li
+              a(href="#") “十月突破一线行”每日动态
+            li
+              a(href="#") “十月突破一线行”每日动态
+            li
+              a(href="#") “十月突破一线行”每日动态
+            li
+              a(href="#") “十月突破一线行”每日动态
+            li
+              a(href="#") “十月突破一线行”每日动态
+            li
+              a(href="#") “十月突破一线行”每日动态
+            li
+              a(href="#") “十月突破一线行”每日动态
+            li
+              a(href="#") “十月突破一线行”每日动态
         .mini-card.fl
           .title-bar
             span 要闻快报
             .more(o-hover="grow")
               a(href="#")
+          ul.news-list
+            li
+              a(href="#") “十月突破一线行”每日动态
+            li
+              a(href="#") “十月突破一线行”每日动态
+            li
+              a(href="#") “十月突破一线行”每日动态
+            li
+              a(href="#") “十月突破一线行”每日动态
+            li
+              a(href="#") “十月突破一线行”每日动态
+            li
+              a(href="#") “十月突破一线行”每日动态
+            li
+              a(href="#") “十月突破一线行”每日动态
+            li
+              a(href="#") “十月突破一线行”每日动态
+            li
+              a(href="#") “十月突破一线行”每日动态
         .mini-card.fl
           .title-bar
             span 要闻快报
             .more(o-hover="grow")
               a(href="#")
+          video(src="https://cunchu.site/show/mp4/dandelion.mp4" controls="controls")
+    .djwh
+      .w1200
+        .title-bar
+            span 党建文化
+            .more(o-hover="grow")
+              a(href="#")
+        plug(_name="module181" _src="https://template.owo.ink/853a721d6ccdeb0d.owo")
+    .ani-3d
+      plug(_name="wave" _src="./src/page/wave.owo")
+      plug(_name="xiongan" _src="./src/page/xiongan.owo")
+    .card-box.w1200.clear
+      .card.fl
+        a(href="#")
+          img(src="@|card1.png|")
+      .card.fl
+        a(href="#")
+          img(src="@|card2.png|")
+      .card.fl
+        a(href="#")
+          img(src="@|card3.png|")
+      .card.fl
+        a(href="#")
+          img(src="@|card4.png|")
   plug(_name="module2" _src="https://template.owo.ink/0d0151b82309f7a7.owo")
 </template>
 
@@ -64,6 +146,7 @@
     text-align: left;
     line-height: 58px;
     color: #ec1b13;
+    margin-bottom: 20px;
     background-image: url('@|title-line.png|');
     .more {
       background-image: url('@|more.png|');
@@ -87,6 +170,117 @@
     margin-top: 20px;
   }
   .mini-card {
-    width: 320px;
+    width: 310px;
+    .news-list {
+      height: 165px;
+      overflow: hidden;
+    }
+  }
+  .news-list {
+    li {
+      background-image: url('@|doit.png|');
+      background-repeat: no-repeat;
+      background-position: left center;
+      line-height: 28px;
+      text-align: left;
+      padding-left: 16px;
+      font-size: 16px;
+    }
+  }
+  .mini-card-box-3 .mini-card:nth-child(2) {
+    margin: 0 35px;
+  }
+  .mini-card-box .more {
+    background-size: 18px;
+  }
+  .mini-card video {
+    width: 310px;
+    height: 165px;
+    display: block;
+  }
+  .djwh {
+    background-color: #f4f6fb;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  .ani-3d {
+    position: relative;
+    background-color: #f32030;
+    background-image: linear-gradient(141deg,#fd8a2f 0%,#c74f2d 51%,#f31c30 75%);
+  }
+  .circle_Box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .card-box {
+    margin-top: 80px;
+    .card {
+      width: 240px;
+      margin: 0 5px;
+      height: 220px;
+      background-color: #f8fafd;
+      padding: 40px 0;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        left: 0;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        transition-duration: 0.3s;
+        transition-property: transform;
+      }
+      
+    }
+    .card:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .hover-show-box {
+    .show {
+      width: 635px;
+      height: 384px;
+    }
+    .right {
+      width: 365px;
+      text-align: left;
+      .right-item {
+        padding: 0 15px;
+        height: 96px;
+      }
+      h3 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 8px;
+      }
+      p {
+        font-size: 14px;
+        display: block;
+        height: 60px;
+        text-indent: 2em;
+      }
+    }
+  }
+  .mini-card-box {
+    margin-top: 30px;
+  }
+  .right-show-box {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 525px;
+    z-index: 99;
   }
 </style>
