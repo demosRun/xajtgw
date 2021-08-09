@@ -57,7 +57,7 @@ li {
 form {
   width: 243px;
   height: 49px;
-  background-image: url('../resource/search-bar.png');
+  background-image: url('../images/search-bar.png');
   position: absolute;
   left: 850px;
   right: 0;
@@ -206,7 +206,9 @@ form {
   /*position:absolute;
 	top:341px;*/
   position: fixed;
-  top: 20%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   left: -1297px;
   z-index: 99;
   display: none;
@@ -307,7 +309,7 @@ form {
   width: 100px;
   height: 526px;
   float: right;
-  background: #4c97dc;
+  background: #e51327;
   border-radius: 0 45px 45px 0;
   position: relative;
   cursor: pointer;
@@ -419,151 +421,186 @@ form {
   transform: scale(1.1);
 }
 
-.conn-2 {
-  position: relative;
-}
-
-.conn-2 .swiper-3d {
+.wrap3d {
   width: 1000px;
-  height: 500px;
+  margin: 0 auto;
   position: relative;
+  text-align: left;
 }
 
-.conn-2 .swiper-3d li {
+.wrap3d #showcase {
+  /* position: absolute;
+    left: 0; */
+  width: 1000px;
+  height: 520px;
+  margin: 0 auto;
+  visibility: hidden;
+  /* border: 1px solid rgba(0, 251, 255, .31) */
+}
+
+.wrap3d .right-imgs-jiaohu {
   position: absolute;
-  background-size: 100% 100%;
+  right: 0;
+  top: 0;
+  width: 180px;
+}
+
+.wrap3d .right-imgs-jiaohu .img-list li {
+  margin-bottom: 4px;
+}
+
+.wrap3d .right-imgs-jiaohu h3 {
+  position: relative;
+  font: bold 24px 'Microsoft YaHei';
+  color: #c40000;
+  border-bottom: 2px solid #d8d8d8;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+}
+
+.wrap3d .right-imgs-jiaohu h3:after {
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 48px;
+  height: 4px;
+  background: #b10201;
+  content: "";
+}
+
+.wrap3d .right-imgs-jiaohu .img-list li a {
+  color: #000;
+  font: normal 14px SimSun;
+}
+
+.wrap3d .right-imgs-jiaohu .img-list li p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.wrap3d #showcase img {
   cursor: pointer;
-  overflow: hidden;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  transition: all 0.4s linear;
-  box-shadow: 1px 2px 8px #b1acac;
-  border-radius: 10px;
 }
 
-.conn-2 .active {
-  opacity: 1;
+.wrap3d #item-title {
+  color: #f31414;
+  font-size: 29px;
+  letter-spacing: 0.13em;
+  text-shadow: 1px 1px 6px #c72b2b;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 22px;
 }
 
-.conn-2 li {
-  background-color: #ffffff;
+.wrap3d .nav-arrow {
+  text-align: center;
 }
 
-.conn-2 li .fl {
-  width: 350px;
-  height: 220px;
+.wrap3d .nav-arrow > button {
+  width: 64px;
+  height: 36px;
+  color: #666;
+  font: 700 16px arial;
+  text-decoration: none;
+  text-align: center;
+  margin: 5px;
+  text-shadow: 0 1px 0 #f5f5f5;
+  background: #f6f6f6;
+  border: solid 2px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.wrap3d .nav-arrow > button:active,
+.wrap3d .nav-arrow > button.down {
+  background: #dfdfdf;
+  border: solid 2px rgba(0, 0, 0, 0.6);
+  box-shadow: none;
+}
+
+.wrap3d .cloud9-item.active .h5-mask {
+  display: none;
+}
+
+/* 3dè½®æ’­å›¾æ ·å¼ */
+
+.wrap3d .cloud9-item {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 320px;
+  opacity: 0.98;
+  cursor: pointer;
+}
+
+.wrap3d .cloud9-item:after {
   position: absolute;
+  left: 0;
   top: 0;
-  bottom: 0;
-  margin: auto;
-  left: 20px;
-}
-
-.conn-2 li .fr {
-  position: absolute;
-  left: 410px;
-  width: 470px;
-  height: 220px;
-  margin: auto auto;
-  top: 0;
-  bottom: 0;
-  overflow: hidden;
-}
-
-.conn-2 li .fr h2 {
-  margin-bottom: 10px;
-  font-size: 26px;
-  line-height: 26px;
-}
-
-.conn-2 li .fr p {
-  text-indent: 2em;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #888888;
-}
-
-.conn-2 .prev {
-  left: 30px;
-}
-
-.conn-2 .next {
-  right: 30px;
-}
-
-.conn-2 .swiper-item.hide {
-  opacity: 0;
-}
-
-.conn-2 .swiper-3d a,
-.conn-2 .swiper-3d img {
-  display: block;
   width: 100%;
   height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  content: "";
 }
 
-.conn-2 .left {
+.wrap3d .cloud9-item.active:after {
+  display: none;
+}
+
+.wrap3d .cloud9-item.active .h5-mask {
+  background: transparent;
+}
+
+.wrap3d .cloud9-item.active.show-code .h5-mask {
+  display: block;
+  background: #000;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.wrap3d .cloud9-item.active.show-code .code {
+  display: inline-block;
+}
+
+.wrap3d .cloud9-item.active.show-code p {
+  display: block;
+}
+
+.wrap3d .h5-mask {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  z-index: 9;
   left: 0;
-  cursor: pointer;
-}
-
-.conn-2 .right {
-  position: absolute;
   top: 0;
-  bottom: 0;
-  margin: auto;
-  z-index: 9;
-  right: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #000;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.wrap3d .h5-mask .code {
+  display: none;
+  margin-top: 90px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.wrap3d .h5-mask p {
+  display: none;
+  width: 100%;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font: normal 16px SimHei;
+  color: #fff;
+}
+
+.wrap3d .cloud9-item .img-h5bg {
+  width: 100%;
+  height: 100%;
   cursor: pointer;
-}
-
-.conn-2 .info-box {
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 10px;
-  height: 160px;
-}
-
-.conn-2 .info-box h2 {
-  font-size: 20px;
-  text-align: center;
-  line-height: 24px;
-}
-
-.conn-2 .info-box h3 {
-  text-align: center;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: normal;
-}
-
-.conn-2 .info-box p {
-  text-indent: 2em;
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-.conn-2 .more {
-  position: absolute;
-  width: 120px;
-  text-align: center;
-  font-size: 16px;
-  text-decoration: underline;
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: 10px;
-  height: 30px;
-  line-height: 30px;
-  background-color: #1a3f96;
 }
 .wave {
   background-size: 100%;
@@ -577,7 +614,7 @@ form {
 }
 .circle_Box {
   width: 1000px;
-  height: 510px;
+  height: 600px;
   margin: 0 auto;
   position: relative;
   z-index: 88;
@@ -586,10 +623,10 @@ form {
 .circle_Box .circleCenter {
   width: 327px;
   height: 327px;
-  background: url(../resource/nei.png) no-repeat;
+  background: url(../images/nei.png) no-repeat;
   background-size: cover;
   position: absolute;
-  top: 86px;
+  top: 136px;
   left: 50%;
   margin-left: -168px;
 }
@@ -597,10 +634,10 @@ form {
 .circle_Box .circleBig {
   width: 444px;
   height: 438px;
-  background: url(../resource/wai.png) no-repeat;
+  background: url(../images/wai.png) no-repeat;
   background-size: cover;
   position: absolute;
-  top: 26px;
+  top: 76px;
   left: 50%;
   margin-left: -222px;
 }
@@ -612,7 +649,7 @@ form {
   background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/text.png) no-repeat;
   background-size: cover;
   position: absolute;
-  top: 185px;
+  top: 235px;
   left: 50%;
   margin-left: -278px;
 }
@@ -621,10 +658,10 @@ form {
   display: inline-block;
   width: 241px;
   height: 53px;
-  background: url(../resource/start.png) no-repeat;
+  background: url(../images/start.png) no-repeat;
   background-size: cover;
   position: absolute;
-  top: 302px;
+  top: 352px;
   left: 50%;
   z-index: 89;
   margin-left: -120px;
@@ -775,7 +812,7 @@ form {
 
 .circle_Box .tipBox {
   width: 1000px;
-  height: 510px;
+  height: 600px;
   position: absolute;
   top: 0px;
   left: 50%;
@@ -794,7 +831,7 @@ form {
   width: 300px;
   height: 180px;
   position: absolute;
-  top: 160px;
+  top: 210px;
   left: 50%;
   background: #fff;
   z-index: 9999;
@@ -863,7 +900,7 @@ form {
   background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/cir_bg.png) no-repeat;
   background-size: cover;
   position: absolute;
-  top: -50px;
+  top: -10px;
   left: 50%;
   margin-left: -320px;
   z-index: 1;
@@ -874,7 +911,7 @@ form {
   width: 256px;
   height: 37px;
   position: absolute;
-  top: 170px;
+  top: 220px;
   left: 50%;
   opacity: 0;
   color: #00ffc5;
@@ -889,7 +926,7 @@ form {
   width: 355px;
   height: 55px;
   position: absolute;
-  top: 210px;
+  top: 260px;
   left: 50%;
   color: #fff;
   font-size: 34px;
@@ -905,7 +942,7 @@ form {
   width: 353px;
   height: 44px;
   position: absolute;
-  top: 260px;
+  top: 310px;
   color: #fff;
   font-size: 30px;
   text-align: center;
@@ -938,7 +975,7 @@ form {
   background-size: cover;
   border-radius: 50px;
   position: absolute;
-  top: 305px;
+  top: 355px;
   left: 305px;
   z-index: 11;
   cursor: pointer;
@@ -952,7 +989,7 @@ form {
   background-size: cover;
   border-radius: 50px;
   position: absolute;
-  top: 305px;
+  top: 355px;
   left: 305px;
   z-index: 11;
   cursor: pointer;
@@ -966,7 +1003,7 @@ form {
   background-size: cover;
   border-radius: 50px;
   position: absolute;
-  top: 305px;
+  top: 355px;
   left: 305px;
   z-index: 11;
   cursor: pointer;
@@ -980,7 +1017,7 @@ form {
   background-size: cover;
   border-radius: 50px;
   position: absolute;
-  top: 305px;
+  top: 355px;
   left: 305px;
   z-index: 11;
   cursor: pointer;
@@ -994,7 +1031,7 @@ form {
   background-size: cover;
   border-radius: 50px;
   position: absolute;
-  top: 305px;
+  top: 355px;
   left: 305px;
   z-index: 11;
   cursor: pointer;
@@ -1008,7 +1045,7 @@ form {
   background-size: cover;
   border-radius: 50px;
   position: absolute;
-  top: 305px;
+  top: 355px;
   left: 305px;
   z-index: 11;
   cursor: pointer;
@@ -1022,7 +1059,7 @@ form {
   background-size: cover;
   border-radius: 50px;
   position: absolute;
-  top: 305px;
+  top: 355px;
   left: 305px;
   z-index: 11;
   cursor: pointer;
@@ -1036,7 +1073,7 @@ form {
   background-size: cover;
   border-radius: 50px;
   position: absolute;
-  top: 305px;
+  top: 355px;
   left: 305px;
   z-index: 11;
   cursor: pointer;
@@ -1050,7 +1087,7 @@ form {
   background-size: cover;
   border-radius: 50px;
   position: absolute;
-  top: 305px;
+  top: 355px;
   left: 305px;
   z-index: 11;
   cursor: pointer;
@@ -1064,7 +1101,7 @@ form {
   background-size: cover;
   border-radius: 50px;
   position: absolute;
-  top: 305px;
+  top: 355px;
   left: 305px;
   z-index: 11;
   cursor: pointer;
@@ -1078,7 +1115,7 @@ form {
   border-radius: 50px;
   background-size: cover;
   position: absolute;
-  top: 305px;
+  top: 355px;
   left: 305px;
   z-index: 11;
   cursor: pointer;
@@ -1091,7 +1128,7 @@ form {
   background: #ccc;
   border-radius: 50px;
   position: absolute;
-  top: 305px;
+  top: 355px;
   left: 305px;
   z-index: 11;
 }
@@ -1149,7 +1186,7 @@ form {
   width: 353px;
   height: 44px;
   position: absolute;
-  top: 310px;
+  top: 360px;
   color: #fff;
   font-size: 30px;
   text-align: center;
@@ -1213,6 +1250,7 @@ form {
 
 .nav-bar {
   background-color: #f3353e;
+  background-image: linear-gradient(141deg, #f97140 0%, #f64f3d 51%, #f2293d 75%);
 }
 
 .title-bar {
@@ -1225,11 +1263,11 @@ form {
   line-height: 58px;
   color: #ec1b13;
   margin-bottom: 20px;
-  background-image: url('../resource/title-line.png');
+  background-image: url('../images/title-line.png');
 }
 
 .title-bar .more {
-  background-image: url('../resource/more.png');
+  background-image: url('../images/more.png');
   position: absolute;
   width: 40px;
   height: 40px;
@@ -1261,7 +1299,7 @@ form {
 }
 
 .news-list li {
-  background-image: url('../resource/doit.png');
+  background-image: url('../images/doit.png');
   background-repeat: no-repeat;
   background-position: left center;
   line-height: 28px;
@@ -1348,8 +1386,17 @@ form {
 }
 
 .hover-show-box .right .right-item {
-  padding: 0 15px;
+  padding: 5px 15px;
   height: 96px;
+  cursor: pointer;
+}
+
+.hover-show-box .right .right-item .show-img {
+  display: none;
+}
+
+.hover-show-box .right .right-item.active {
+  background-color: #f5e8e8;
 }
 
 .hover-show-box .right h3 {

@@ -1,0 +1,268 @@
+<template>
+  <div id="wrap3d" class="wrap3d">
+    <div id="showcase" class="noselect" style="position: relative; overflow: hidden; visibility: visible;">
+      <div class="cloud9-item" style="display: inline-block; position: absolute; transform-origin: 0px 0px; z-index: 30; transform: translate(520px, 37.6px) scale(0.3);"><img src="http://politics.people.com.cn/NMediaFile/2019/0930/MAIN201909301744137337607512329.jpg" border="0" class="img-h5bg" width="400" height="640"><div class="h5-mask"></div></div>
+      <div class="cloud9-item" style="display: inline-block; position: absolute; transform-origin: 0px 0px; z-index: 36; transform: translate(616.441px, 37.7544px) scale(0.366844);"><img src="http://politics.people.com.cn/NMediaFile/2019/0920/MAIN201909201731031572099119734.jpg" border="0" class="img-h5bg" width="400" height="640"><div class="h5-mask"></div></div>
+      <div class="cloud9-item" style="display: inline-block; position: absolute; transform-origin: 0px 0px; z-index: 54; transform: translate(742.275px, 43.9629px) scale(0.541844);"><img src="http://politics.people.com.cn/NMediaFile/2019/0925/MAIN201909251556411117958150402.jpg" border="0" class="img-h5bg" width="400" height="640"><div class="h5-mask"></div></div>
+      <div class="cloud9-item" style="display: inline-block; position: absolute; transform-origin: 0px 0px; z-index: 75; transform: translate(819.034px, 63.2456px) scale(0.758156);"><img src="http://politics.people.com.cn/NMediaFile/2019/0917/MAIN201909171637078007155732388.jpg" border="0" class="img-h5bg" width="400" height="640"><div class="h5-mask"></div></div>
+      <div class="cloud9-item" style="display: inline-block; position: absolute; transform-origin: 0px 0px; z-index: 93; transform: translate(719.008px, 88.2371px) scale(0.933156);"><img src="http://politics.people.com.cn/NMediaFile/2019/0917/MAIN201909171637074451411187738.jpg" border="0" class="img-h5bg" width="400" height="640"><div class="h5-mask"></div></div>
+      <div class="cloud9-item active" style="display: inline-block; position: absolute; transform-origin: 0px 0px; z-index: 100; transform: translate(450px, 100px) scale(1);"><img src="http://politics.people.com.cn/NMediaFile/2019/0917/MAIN201909171637070946435895523.jpg" border="0" class="img-h5bg" width="400" height="640"><div class="h5-mask"></div></div>
+      <div class="cloud9-item" style="display: inline-block; position: absolute; transform-origin: 0px 0px; z-index: 93; transform: translate(194.361px, 88.2371px) scale(0.933156);"><img src="http://politics.people.com.cn/NMediaFile/2019/0917/MAIN201909171637067472684664667.jpg" border="0" class="img-h5bg" width="400" height="640"><div class="h5-mask"></div></div>
+      <div class="cloud9-item" style="display: inline-block; position: absolute; transform-origin: 0px 0px; z-index: 75; transform: translate(129.335px, 63.2456px) scale(0.758156);"><img src="http://politics.people.com.cn/NMediaFile/2019/0917/MAIN201909171637063915573543341.jpg" border="0" class="img-h5bg" width="400" height="640"><div class="h5-mask"></div></div>
+      <div class="cloud9-item" style="display: inline-block; position: absolute; transform-origin: 0px 0px; z-index: 54; transform: translate(249.356px, 43.9629px) scale(0.541844);"><img src="http://politics.people.com.cn/NMediaFile/2019/0917/MAIN201909171637060410499023270.jpg" border="0" class="img-h5bg" width="400" height="640"><div class="h5-mask"></div></div>
+      <div class="cloud9-item" style="display: inline-block; position: absolute; transform-origin: 0px 0px; z-index: 36; transform: translate(410.19px, 37.7544px) scale(0.366844);"><img src="http://politics.people.com.cn/NMediaFile/2019/0917/MAIN201909171637056884765941779.jpg" border="0" class="img-h5bg" width="400" height="640"><div class="h5-mask"></div></div>
+    </div>
+  </div>
+  
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      var showcase = $("#showcase")
+
+      showcase.Cloud9Carousel({
+          yPos: 2,
+          yRadius: 48,
+          mirrorOptions: {
+            gap: 22,
+            height: 0.2
+          },
+          // autoPlay: 3000,
+          // autoPlayDelay: 1500,
+          buttonLeft: $(".nav-arrow > .left"),
+          buttonRight: $(".nav-arrow > .right"),
+          autoPlay: true,
+          bringToFront: true,
+          onRendered: showcaseUpdated,
+          onLoaded: function () {
+              showcase.css('visibility', 'visible')
+              showcase.css('display', 'none')
+              showcase.fadeIn(1500)
+              // $('#showcase .cloud9-item').mouseenter(function () {
+              // 	if ($(this).hasClass('active')) {
+              // 		$(this).addClass('show-code')
+              // 	}
+              // })
+              // $('#showcase .cloud9-item').mouseleave(function () {
+              // 	$(this).removeClass('show-code')
+              // })
+          }
+      })
+
+      function showcaseUpdated(showcase) {
+          var title = $('#item-title').html(
+              $(showcase.nearestItem()).attr('alt')
+          )
+
+          var c = Math.cos((showcase.floatIndex() % 1) * 2 * Math.PI)
+          title.css('opacity', 0.5 + (0.5 * c))
+      }
+
+      // Simulate physical button click effect
+      $('.nav-arrow > button').click(function (e) {
+          var b = $(e.target).addClass('down')
+          setTimeout(function () {
+              b.removeClass('down')
+          }, 80)
+      })
+
+      $(document).keydown(function (e) {
+          switch (e.keyCode) {
+              /* left arrow */
+              case 37:
+                  $('.nav-arrow > .left').click()
+                  break
+
+              /* right arrow */
+              case 39:
+                  $('.nav-arrow > .right').click()
+          }
+      })
+      
+    }
+  }
+</script>
+
+<style lang="less">
+.wrap3d {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+}
+
+#showcase {
+    /* position: absolute;
+    left: 0; */
+    width: 1000px;
+    height: 520px;
+    margin: 0 auto;
+    visibility: hidden;
+    /* border: 1px solid rgba(0, 251, 255, .31) */
+}
+
+.right-imgs-jiaohu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 180px;
+}
+
+.right-imgs-jiaohu .img-list li {
+    margin-bottom: 4px;
+}
+
+.right-imgs-jiaohu h3 {
+    position: relative;
+    font: bold 24px 'Microsoft YaHei';
+    color: #c40000;
+    border-bottom: 2px solid #d8d8d8;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+}
+.right-imgs-jiaohu h3:after {
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 48px;
+    height: 4px;
+    background: #b10201;
+    content: ""
+}
+
+
+.right-imgs-jiaohu .img-list li a {
+    color: #000;
+    font: normal 14px SimSun;
+}
+.right-imgs-jiaohu .img-list li p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#showcase img {
+    cursor: pointer
+}
+
+#item-title {
+    color: #f31414;
+    font-size: 29px;
+    letter-spacing: .13em;
+    text-shadow: 1px 1px 6px #c72b2b;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 22px
+}
+
+.nav-arrow {
+    text-align: center
+}
+
+.nav-arrow >button {
+    width: 64px;
+    height: 36px;
+    color: #666;
+    font: 700 16px arial;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px;
+    text-shadow: 0 1px 0 #f5f5f5;
+    background: #f6f6f6;
+    border: solid 2px rgba(0, 0, 0, .4);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 0 9px 1px rgba(0, 0, 0, .4);
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, .4);
+    cursor: pointer
+}
+
+.nav-arrow>button:active,
+.nav-arrow>button.down {
+    background: #dfdfdf;
+    border: solid 2px rgba(0, 0, 0, .6);
+    box-shadow: none
+}
+
+.cloud9-item.active .h5-mask {
+    display: none;
+}
+
+/* 3dè½®æ’­å›¾æ ·å¼ */
+
+.cloud9-item {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 320px;
+    opacity: 0.98;cursor:pointer;
+}
+
+.cloud9-item:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .2);
+    content: ""
+}
+.cloud9-item.active:after {
+    display: none;
+}
+
+.cloud9-item.active .h5-mask{
+    background: transparent;
+}
+
+.cloud9-item.active.show-code .h5-mask {
+    display: block;
+    background: #000;
+    background: rgba(0, 0, 0, .7);
+}
+.cloud9-item.active.show-code .code {
+    display: inline-block;
+}
+.cloud9-item.active.show-code p {
+    display: block
+}
+
+.h5-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #000;
+    background: rgba(0, 0, 0, .1);
+}
+
+.h5-mask .code {
+    display: none;
+    margin-top: 90px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.h5-mask p {
+    display: none;
+    width: 100%;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font: normal 16px SimHei;
+    color: #fff;
+}
+
+.cloud9-item .img-h5bg {
+    width: 100%;
+    height: 100%;cursor:pointer;
+}
+
+</style>

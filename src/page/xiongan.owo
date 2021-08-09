@@ -63,7 +63,7 @@
 <style lang="less">
 .circle_Box {
 	width: 1000px;
-	height: 510px;
+	height: 600px;
 	margin: 0 auto;
 	position: relative;
 	z-index: 88
@@ -75,7 +75,7 @@
 	background: url(@|nei.png|) no-repeat;
 	background-size: cover;
 	position: absolute;
-	top: 86px;
+	top: 136px;
 	left: 50%;
 	margin-left: -168px
 }
@@ -86,7 +86,7 @@
 	background: url(@|wai.png|) no-repeat;
 	background-size: cover;
 	position: absolute;
-	top: 26px;
+	top: 76px;
 	left: 50%;
 	margin-left: -222px
 }
@@ -98,7 +98,7 @@
 	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/text.png) no-repeat;
 	background-size: cover;
 	position: absolute;
-	top: 185px;
+	top: 235px;
 	left: 50%;
 	margin-left: -278px
 }
@@ -110,7 +110,7 @@
 	background: url(@|start.png|) no-repeat;
 	background-size: cover;
 	position: absolute;
-	top: 302px;
+	top: 352px;
 	left: 50%;
 	z-index: 89;
 	margin-left: -120px;
@@ -259,7 +259,7 @@
 }
 .tipBox {
 	width: 1000px;
-	height: 510px;
+	height: 600px;
 	position: absolute;
 	top: 0px;
 	left: 50%;
@@ -278,7 +278,7 @@
 	width: 300px;
 	height: 180px;
 	position: absolute;
-	top: 160px;
+	top: 210px;
 	left: 50%;
 	background: #fff;
 	z-index: 9999;
@@ -347,7 +347,7 @@
 	background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/cir_bg.png) no-repeat;
 	background-size: cover;
 	position: absolute;
-	top: -50px;
+	top: -10px;
 	left: 50%;
 	margin-left: -320px;
 	z-index: 1
@@ -358,7 +358,7 @@
 	width: 256px;
 	height: 37px;
 	position: absolute;
-	top: 170px;
+	top: 220px;
 	left: 50%;
 	opacity: 0;
 	color: #00ffc5;
@@ -373,7 +373,7 @@
 	width: 355px;
 	height: 55px;
 	position: absolute;
-	top: 210px;
+	top: 260px;
 	left: 50%;
 	color: #fff;
 	font-size: 34px;
@@ -389,7 +389,7 @@
 	width: 353px;
 	height: 44px;
 	position: absolute;
-	top: 260px;
+	top: 310px;
 	color: #fff;
 	font-size: 30px;
 	text-align: center;
@@ -422,7 +422,7 @@
 	background-size: cover;
 	border-radius: 50px;
 	position: absolute;
-	top: 305px;
+	top: 355px;
 	left: 305px;
 	z-index: 11;
 	cursor: pointer
@@ -436,7 +436,7 @@
 	background-size: cover;
 	border-radius: 50px;
 	position: absolute;
-	top: 305px;
+	top: 355px;
 	left: 305px;
 	z-index: 11;
 	cursor: pointer
@@ -450,7 +450,7 @@
 	background-size: cover;
 	border-radius: 50px;
 	position: absolute;
-	top: 305px;
+	top: 355px;
 	left: 305px;
 	z-index: 11;
 	cursor: pointer
@@ -464,7 +464,7 @@
 	background-size: cover;
 	border-radius: 50px;
 	position: absolute;
-	top: 305px;
+	top: 355px;
 	left: 305px;
 	z-index: 11;
 	cursor: pointer
@@ -478,7 +478,7 @@
 	background-size: cover;
 	border-radius: 50px;
 	position: absolute;
-	top: 305px;
+	top: 355px;
 	left: 305px;
 	z-index: 11;
 	cursor: pointer
@@ -492,7 +492,7 @@
 	background-size: cover;
 	border-radius: 50px;
 	position: absolute;
-	top: 305px;
+	top: 355px;
 	left: 305px;
 	z-index: 11;
 	cursor: pointer
@@ -506,7 +506,7 @@
 	background-size: cover;
 	border-radius: 50px;
 	position: absolute;
-	top: 305px;
+	top: 355px;
 	left: 305px;
 	z-index: 11;
 	cursor: pointer
@@ -520,7 +520,7 @@
 	background-size: cover;
 	border-radius: 50px;
 	position: absolute;
-	top: 305px;
+	top: 355px;
 	left: 305px;
 	z-index: 11;
 	cursor: pointer
@@ -534,7 +534,7 @@
 	background-size: cover;
 	border-radius: 50px;
 	position: absolute;
-	top: 305px;
+	top: 355px;
 	left: 305px;
 	z-index: 11;
 	cursor: pointer
@@ -548,7 +548,7 @@
 	background-size: cover;
 	border-radius: 50px;
 	position: absolute;
-	top: 305px;
+	top: 355px;
 	left: 305px;
 	z-index: 11;
 	cursor: pointer
@@ -562,7 +562,7 @@
 	border-radius: 50px;
 	background-size: cover;
 	position: absolute;
-	top: 305px;
+	top: 355px;
 	left: 305px;
 	z-index: 11;
 	cursor: pointer
@@ -575,7 +575,7 @@
 	background: #ccc;
 	border-radius: 50px;
 	position: absolute;
-	top: 305px;
+	top: 355px;
 	left: 305px;
 	z-index: 11
 }
@@ -632,7 +632,7 @@
     width: 353px;
     height: 44px;
     position: absolute;
-    top: 310px;
+    top: 360px;
     color: #fff;
     font-size: 30px;
     text-align: center;

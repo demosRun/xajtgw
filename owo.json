@@ -12,7 +12,7 @@
 		},
 		{
 			"name": "viewport",
-			"content": "width=1000, user-scalable=yes"
+			"content": "width=1400, user-scalable=yes"
 		},
 		{
 			"name": "format-detection",
@@ -81,8 +81,8 @@
 			"src": "http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/js/new_animation.js"
 		},
 		{
-			"name": "swiper3D",
-			"src": "./owo_modules/swiper3D.js"
+			"name": "cloud9carousel",
+			"src": "http://politics.people.com.cn/img/MAIN/2019/09/119665/js/jquery.cloud9carousel.js"
 		}
 	],
 	"styleList": [

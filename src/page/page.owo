@@ -18,20 +18,24 @@
         .more(o-hover="grow")
           a(href="#")
       .hover-show-box.clear
-        img.fl.show(src="http://www.people.com.cn/NMediaFile/2021/0806/MAIN202108060917331965054780576.jpg")
+        img.fl.show(src="")
         .right.fr
           .right-item
             h3 雄安集团“安全质量日”活动举办
             p 联合体不断创新完善产业链，探索交叉融合的发展运行模式，进一步优化联合体产业连接机制。
+            img.show-img(src="http://www.people.com.cn/NMediaFile/2021/0809/MAIN202108091005134055334592590.jpg")
           .right-item
             h3 雄安集团“安全质量日”活动举办
             p 联合体不断创新完善产业链，探索交叉融合的发展运行模式，进一步优化联合体产业连接机制。
+            img.show-img(src="http://www.people.com.cn/NMediaFile/2021/0809/MAIN202108091028368481032516819.jpg")
           .right-item
             h3 雄安集团“安全质量日”活动举办
             p 联合体不断创新完善产业链，探索交叉融合的发展运行模式，进一步优化联合体产业连接机制。
+            img.show-img(src="http://www.people.com.cn/NMediaFile/2021/0809/MAIN202108091005134055334592590.jpg")
           .right-item
             h3 雄安集团“安全质量日”活动举办
             p 联合体不断创新完善产业链，探索交叉融合的发展运行模式，进一步优化联合体产业连接机制。
+            img.show-img(src="http://www.people.com.cn/NMediaFile/2021/0809/MAIN202108091028368481032516819.jpg")
       .mini-card-box.mini-card-box-3.clear
         .mini-card.fl
           .title-bar
@@ -93,7 +97,7 @@
             span 党建文化
             .more(o-hover="grow")
               a(href="#")
-        plug(_name="module181" _src="https://template.owo.ink/853a721d6ccdeb0d.owo")
+        plug(_name="70swiper3d" _src="./src/page/70swiper3d.owo")
     .ani-3d
       plug(_name="wave" _src="./src/page/wave.owo")
       plug(_name="xiongan" _src="./src/page/xiongan.owo")
@@ -115,7 +119,26 @@
 
 <script>
   module.exports = {
-
+    created: function () {
+      document.querySelectorAll('.hover-show-box .right-item').forEach(element => {
+        element.onmouseenter = function (e) {
+          console.log(e)
+          if (e.target.querySelector('.show-img')) {
+            document.querySelectorAll('.hover-show-box .right-item').forEach(element => {
+              element.classList.remove('active')
+            })
+            e.target.classList.add('active')
+            document.querySelector('.hover-show-box .show').src = e.target.querySelector('.show-img').src
+          }
+        }
+      });
+      setTimeout(() => {
+        if (document.querySelector('.hover-show-box .right-item')) {
+          document.querySelector('.hover-show-box .right-item').classList.add('active')
+          document.querySelector('.hover-show-box .show').src = document.querySelector('.hover-show-box .right-item .show-img').src
+        }
+      }, 100);
+    }
   }
 </script>
 
@@ -136,6 +159,7 @@
   }
   .nav-bar {
     background-color: #f3353e;
+    background-image: linear-gradient(141deg, #f97140 0%, #f64f3d 51%, #f2293d 75%);
   }
   .title-bar {
     position: relative;
@@ -255,8 +279,15 @@
       width: 365px;
       text-align: left;
       .right-item {
-        padding: 0 15px;
+        padding: 5px 15px;
         height: 96px;
+        cursor: pointer;
+        .show-img {
+          display: none;
+        }
+      }
+      .right-item.active {
+        background-color: #f5e8e8;
       }
       h3 {
         font-size: 20px;

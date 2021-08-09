@@ -69,7 +69,9 @@
 	/*position:absolute;
 	top:341px;*/
 	position:fixed;
-	top:20%;
+	top: 0;
+	bottom: 0;
+    margin: auto;
 	left:-1297px;
 	z-index:99;
 	display:none;
@@ -131,7 +133,7 @@
 	width:100px;
 	height:526px;
 	float:right;
-	background:#4c97dc;
+	background:#e51327;
 	border-radius: 0 45px 45px 0;
 	position:relative;
 	cursor:pointer;

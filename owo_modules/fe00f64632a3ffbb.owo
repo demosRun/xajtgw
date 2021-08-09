@@ -12,7 +12,7 @@
   module.exports = {
     data: {
       _swiperBoxList: [
-        {src:"https://cunchu.site/upload/de11264d737d7ae2.jpeg", text: "全省“法治进校园”巡讲团首站——晋中"},
+        {src:"@|show-1.jpg|", text: "全省“法治进校园”巡讲团首站——晋中"},
         {src:"https://cunchu.site/upload/b166f050c3f2d45d.jpeg", text: "全省“法治进校园”巡讲团首站——晋中"},
         {src:"https://cunchu.site/upload/de78c150e6a6944d.jpeg", text: "全省“法治进校园”巡讲团首站——晋中"},
       ]
