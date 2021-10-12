@@ -54,84 +54,10 @@ li {
   list-style: none;
 }
 
-form {
-  width: 243px;
-  height: 49px;
-  background-image: url('../images/search-bar.png');
-  position: absolute;
-  left: 850px;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-.search-bar .searchkey {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  height: 30px;
-  right: 10px;
-  width: 160px;
-  font-size: 16px;
-}
-
-.search-bar .searchbutton {
-  position: absolute;
-  left: 6px;
-  top: 0;
-  bottom: 0;
-  margin: 13px;
-  cursor: pointer;
-}
-.main-bar {
-  width: 1000px;
-  font-size: 18px;
-  height: 60px;
-  line-height: 60px;
-  margin: 0 auto;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.main-bar a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.main-bar a:link,
-.main-bar a:visited {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.main-bar a:hover {
-  color: white;
-  -webkit-text-decoration: #ffffff;
-          text-decoration: #ffffff;
-}
-
-.main-bar a {
-  color: white;
-  display: inline-block;
-  margin: 0;
-  line-height: 60px;
-  text-align: center;
-  height: 60px;
-  width: 120px;
-}
-
-.main-bar a.active {
-  background-color: #f03821;
-  font-size: 20px;
-  border-bottom: 4px solid white;
-}
 .swiper-box {
-  height: 34vw;
+  height: 360px;
   overflow: hidden;
-  width: 100%;
+  width: 645px;
   margin: 0 auto;
 }
 
@@ -167,21 +93,20 @@ form {
 }
 
 .swiper-box .swiper-pagination-switch {
-  width: 20px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   margin: 0 3px;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 50%;
   background-color: white;
   position: relative;
   cursor: pointer;
-  transition: width 0.5s;
+  float: left;
   box-shadow: 0px 1px 2px #555 inset;
 }
 
 .swiper-box .swiper-active-switch {
-  background-color: #ffb81f;
-  width: 60px;
+  background-color: #168cdb;
 }
 
 .swiper-box a {
@@ -194,1031 +119,97 @@ form {
 
 .swiper-box .pagination {
   position: absolute;
-  bottom: 20px;
-  right: 0;
-  left: 0;
+  bottom: 10px;
+  right: 10px;
   height: 10px;
-  text-align: center;
 }
-.slideBox {
-  width: 1397px;
-  height: 526px;
-  /*position:absolute;
-	top:341px;*/
-  position: fixed;
+.LbWMGSGs {
+  height: 210px;
+  width: 1300px;
+  margin-left: -50px;
+  position: relative;
+}
+
+.LbWMGSGs .swiper-container {
+  height: 100%;
+  width: 1250px;
+  position: relative;
+}
+
+.LbWMGSGs .swiper-container .swiper-item {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
   top: 0;
   bottom: 0;
   margin: auto;
-  left: -1297px;
-  z-index: 99;
-  display: none;
 }
 
-.slideBox .shine {
-  width: 70px;
-  height: 120px;
-  position: absolute;
-  right: -40px;
-  bottom: 0px;
-  z-index: 100;
-}
-
-.slideBox .shine em {
-  display: inline-block;
-  width: 59px;
-  height: 59px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideShineDot.png) top center no-repeat;
-  cursor: pointer;
-  -webkit-animation: shineDot 2s linear infinite alternate;
-  animation: shineDot 2s linear infinite alternate;
-}
-
-.slideBox .shine i {
-  display: inline-block;
-  width: 63px;
-  height: 98px;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideShineHand.png) top center no-repeat;
-  cursor: pointer;
-  -webkit-animation: shineHand 2s linear infinite alternate;
-  animation: shineHand 2s linear infinite alternate;
-}
-
-@-webkit-keyframes shineDot {
-  0% {
-    -webkit-transform: scale(1);
-  }
-
-  50% {
-    -webkit-transform: scale(1.2);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-  }
-}
-
-@keyframes shineDot {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-@-webkit-keyframes shineHand {
-  0% {
-    transform: scale(1.02);
-  }
-
-  50% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(1.02);
-  }
-}
-
-@keyframes shineHand {
-  0% {
-    transform: scale(1.02);
-  }
-
-  50% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(1.02);
-  }
-}
-
-.slideBox .open {
-  width: 100px;
-  height: 526px;
-  float: right;
-  background: #e51327;
-  border-radius: 0 45px 45px 0;
-  position: relative;
-  cursor: pointer;
-}
-
-.slideBox .open span {
-  position: absolute;
-  width: 30px;
-  top: 80px;
-  left: 50%;
-  margin-left: -18px;
-  /*background:url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideOpen.png) top center no-repeat;
-	*background:url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideOpen.png) top right no-repeat;*/
-  padding-top: 30px;
-  font: normal 30px/30px "SimHei";
-  color: #fff;
-  -ms-writing-mode: tb-rl;
-      writing-mode: tb-rl;
-}
-
-.slideBox ul {
-  display: block;
-  position: relative;
-  float: left;
-  background: #056110;
-  padding-right: 1px;
-}
-
-.slideBox ul li {
-  width: 215px;
-  height: 526px;
-  float: left;
-  background: #45a936;
-  padding-left: 1px;
-  position: relative;
-  overflow: hidden;
-}
-
-.slideBox ul li span {
-  display: block;
-  width: 215px;
-  position: absolute;
-  top: 190px;
-  padding-top: 100px;
-  font: normal 24px/36px "KaiTi";
-  text-align: center;
-  color: #fff;
-}
-
-.slideBox ul li span.icon01 {
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideIcon01.png) top center no-repeat;
-}
-
-.slideBox ul li span.icon02 {
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideIcon02.png) top center no-repeat;
-}
-
-.slideBox ul li span.icon03 {
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideIcon03.png) top center no-repeat;
-}
-
-.slideBox ul li span.icon04 {
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideIcon04.png) top center no-repeat;
-}
-
-.slideBox ul li span.icon05 {
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideIcon05.png) top center no-repeat;
-}
-
-.slideBox ul li span.icon06 {
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideIcon06.png) top center no-repeat;
-}
-
-.slideBox ul li div.showText {
-  width: 215px;
-  height: 525px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/slideShowBg.png) top center repeat;
-  position: absolute;
-  top: 525px;
-  left: 0px;
-  /*transition: top 500ms;
-	-moz-transition: top 500ms;
-	-webkit-transition: top 500ms;
-	-o-transition: top 500ms;*/
-}
-
-.slideBox ul li.hover div.showText {
-  top: 0px;
-}
-
-.slideBox ul li div.showText p {
-  padding: 65px 15px 20px 15px;
-  font: normal 18px/160% "SimHei";
-  color: #fff;
-  text-align: justify;
-}
-
-.slideBox ul li div.showText p a {
-  color: #fff;
-}[o-hover="grow"] {
-  display: inline-block;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  transition-duration: 0.3s;
-  transition-property: transform;
-}
-[o-hover="grow"]:hover, [o-hover="grow"]:focus, [o-hover="grow"]:active {
-  transform: scale(1.1);
-}
-
-.wrap3d {
-  width: 1000px;
-  margin: 0 auto;
-  position: relative;
-  text-align: left;
-}
-
-.wrap3d #showcase {
-  /* position: absolute;
-    left: 0; */
-  width: 1000px;
-  height: 520px;
-  margin: 0 auto;
-  visibility: hidden;
-  /* border: 1px solid rgba(0, 251, 255, .31) */
-}
-
-.wrap3d .right-imgs-jiaohu {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 180px;
-}
-
-.wrap3d .right-imgs-jiaohu .img-list li {
-  margin-bottom: 4px;
-}
-
-.wrap3d .right-imgs-jiaohu h3 {
-  position: relative;
-  font: bold 24px 'Microsoft YaHei';
-  color: #c40000;
-  border-bottom: 2px solid #d8d8d8;
-  margin-bottom: 15px;
-  padding-bottom: 8px;
-}
-
-.wrap3d .right-imgs-jiaohu h3:after {
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 48px;
-  height: 4px;
-  background: #b10201;
-  content: "";
-}
-
-.wrap3d .right-imgs-jiaohu .img-list li a {
-  color: #000;
-  font: normal 14px SimSun;
-}
-
-.wrap3d .right-imgs-jiaohu .img-list li p {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.wrap3d #showcase img {
-  cursor: pointer;
-}
-
-.wrap3d #item-title {
-  color: #f31414;
-  font-size: 29px;
-  letter-spacing: 0.13em;
-  text-shadow: 1px 1px 6px #c72b2b;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 22px;
-}
-
-.wrap3d .nav-arrow {
-  text-align: center;
-}
-
-.wrap3d .nav-arrow > button {
-  width: 64px;
-  height: 36px;
-  color: #666;
-  font: 700 16px arial;
-  text-decoration: none;
-  text-align: center;
-  margin: 5px;
-  text-shadow: 0 1px 0 #f5f5f5;
-  background: #f6f6f6;
-  border: solid 2px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-}
-
-.wrap3d .nav-arrow > button:active,
-.wrap3d .nav-arrow > button.down {
-  background: #dfdfdf;
-  border: solid 2px rgba(0, 0, 0, 0.6);
-  box-shadow: none;
-}
-
-.wrap3d .cloud9-item.active .h5-mask {
-  display: none;
-}
-
-/* 3dè½®æ’­å›¾æ ·å¼ */
-
-.wrap3d .cloud9-item {
-  position: relative;
-  display: inline-block;
-  width: 200px;
-  height: 320px;
-  opacity: 0.98;
-  cursor: pointer;
-}
-
-.wrap3d .cloud9-item:after {
-  position: absolute;
-  left: 0;
-  top: 0;
+.LbWMGSGs .swiper-wrapper {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  content: "";
 }
 
-.wrap3d .cloud9-item.active:after {
-  display: none;
+.LbWMGSGs {
+  position: relative;
 }
 
-.wrap3d .cloud9-item.active .h5-mask {
-  background: transparent;
-}
-
-.wrap3d .cloud9-item.active.show-code .h5-mask {
-  display: block;
-  background: #000;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.wrap3d .cloud9-item.active.show-code .code {
-  display: inline-block;
-}
-
-.wrap3d .cloud9-item.active.show-code p {
-  display: block;
-}
-
-.wrap3d .h5-mask {
+.LbWMGSGs .swiper-button {
   position: absolute;
-  left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background: #000;
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.wrap3d .h5-mask .code {
-  display: none;
-  margin-top: 90px;
-  width: 100px;
-  height: 100px;
-  margin-bottom: 20px;
-}
-
-.wrap3d .h5-mask p {
-  display: none;
-  width: 100%;
-  text-align: center;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  font: normal 16px SimHei;
-  color: #fff;
-}
-
-.wrap3d .cloud9-item .img-h5bg {
-  width: 100%;
-  height: 100%;
+  bottom: 30px;
+  margin: auto;
   cursor: pointer;
-}
-.wave {
-  background-size: 100%;
-  text-align: center;
-  margin: 0px;
-  overflow: hidden;
-  width: 100%;
-  bottom: 0px;
-  left: 0px;
-  z-index: 0;
-}
-.circle_Box {
-  width: 1000px;
-  height: 600px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 88;
-}
-
-.circle_Box .circleCenter {
-  width: 327px;
-  height: 327px;
-  background: url(../images/nei.png) no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 136px;
-  left: 50%;
-  margin-left: -168px;
-}
-
-.circle_Box .circleBig {
-  width: 444px;
-  height: 438px;
-  background: url(../images/wai.png) no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 76px;
-  left: 50%;
-  margin-left: -222px;
-}
-
-.circle_Box .text {
-  display: inline-block;
-  width: 556px;
-  height: 90px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/text.png) no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 235px;
-  left: 50%;
-  margin-left: -278px;
-}
-
-.circle_Box .xionganBegin {
-  display: inline-block;
-  width: 241px;
-  height: 53px;
-  background: url(../images/start.png) no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 352px;
-  left: 50%;
-  z-index: 89;
-  margin-left: -120px;
-  cursor: pointer;
-}
-
-.circle_Box .robot {
-  width: 278px;
-  height: 363px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/robot.png) no-repeat;
-  background-size: cover;
-  position: absolute;
-  right: -15px;
-  bottom: -60px;
-  z-index: 99999;
-  cursor: pointer;
-}
-
-.circle_Box .playBox {
-  width: 99%;
-  position: absolute;
-  top: 30px;
-  z-index: 98;
-  height: 230px;
-}
-
-.circle_Box .playBox .playBoxSwiper {
-  width: 95%;
-  height: 130px;
-  margin: 0 0 0 4%;
-  overflow: hidden;
-}
-
-.circle_Box .playBox .leftButton {
-  display: inline-block;
-  width: 14px;
-  height: 26px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/6index/left_b.png) no-repeat;
-  position: absolute;
-  top: 160px;
-  left: 0px;
-  cursor: pointer;
-}
-
-.circle_Box .playBox .rightButton {
-  display: inline-block;
-  width: 14px;
-  height: 26px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/6index/right_b.png) no-repeat;
-  position: absolute;
-  top: 160px;
-  right: 0px;
-  cursor: pointer;
-}
-
-.circle_Box .playBox h3 {
-  padding: 15px 0 30px 0;
-}
-
-.circle_Box .playBox div.swiper-slide {
-  width: 277px;
-  height: 128px;
-  margin: 0 auto;
-  cursor: pointer;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/6index/bo_bg.png) no-repeat;
-}
-
-.circle_Box .playBox div.swiper-slide span {
-  display: inline-block;
-  width: 275px;
-  height: 89px;
-  border-radius: 15px 0 0 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.circle_Box .playBox div.swiper-slide span b {
-  display: inline-block;
-  width: 53px;
-  height: 53px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/6index/play.png) no-repeat;
-  position: absolute;
-  top: 20px;
-  left: 110px;
-}
-
-.circle_Box .playBox div.swiper-slide p {
-  text-align: center;
-  width: 277px;
-  margin-top: 0px;
-  color: #fff;
-}
-
-.circle_Box .playBox div.swiper-slide:hover img {
-  -webkit-animation: animationMove 1s ease forwards;
-  animation: animationMove 1s ease forwards;
-}
-
-.circle_Box .rotatePrev {
-  -webkit-animation: rotatePrev 30s linear infinite;
-  animation: rotatePrev 30s linear infinite;
-}
-
-@-webkit-keyframes rotatePrev {
-  0% {
-    -webkit-transform: rotate(0);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes rotatePrev {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.circle_Box .rotateNext {
-  -webkit-animation: rotateNext 30s linear infinite;
-  animation: rotateNext 30s linear infinite;
-}
-
-@-webkit-keyframes rotateNext {
-  0% {
-    -webkit-transform: rotate(0);
-  }
-
-  100% {
-    -webkit-transform: rotate(-360deg);
-  }
-}
-
-@keyframes rotateNext {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
-.circle_Box .tipBox {
-  width: 1000px;
-  height: 600px;
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  margin-left: -500px;
   z-index: 999;
-  display: none;
+  background-image: none;
 }
 
-.circle_Box .tipBox span a {
-  display: inline-block;
+.LbWMGSGs .swiper-button-next {
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.LbWMGSGs .swiper-button-prev {
+  left: 0;
+}
+
+.LbWMGSGs a {
+  color: black;
+  display: block;
   width: 100%;
   height: 100%;
+  text-decoration: none;
 }
 
-.circle_Box .tipBox .tipIconText {
-  width: 300px;
-  height: 180px;
+.LbWMGSGs a img {
+  width: 100%;
+  height: 170px;
+  margin: 0 auto;
+  display: block;
+}
+
+.LbWMGSGs .image-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 30px;
+  font-size: 16px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.LbWMGSGs .swiper-slide {
+  position: relative;
+}
+
+.LbWMGSGs .swiper-slide .play-button {
   position: absolute;
-  top: 210px;
-  left: 50%;
-  background: #fff;
-  z-index: 9999;
-  margin-left: -150px;
-  display: none;
-}
-
-.circle_Box .tipBox #text1 {
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s1.png) no-repeat;
-  background-size: cover;
-}
-
-.circle_Box .tipBox #text2 {
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s2.png) no-repeat;
-  background-size: cover;
-}
-
-.circle_Box .tipBox #text3 {
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s3.png) no-repeat;
-  background-size: cover;
-}
-
-.circle_Box .tipBox #text4 {
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s4.png) no-repeat;
-  background-size: cover;
-}
-
-.circle_Box .tipBox #text5 {
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s5.png) no-repeat;
-  background-size: cover;
-}
-
-.circle_Box .tipBox #text6 {
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s6.png) no-repeat;
-  background-size: cover;
-}
-
-.circle_Box .tipBox #text7 {
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s7.png) no-repeat;
-  background-size: cover;
-}
-
-.circle_Box .tipBox #text8 {
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s8.png) no-repeat;
-  background-size: cover;
-}
-
-.circle_Box .tipBox #text9 {
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s9.png) no-repeat;
-  background-size: cover;
-}
-
-.circle_Box .tipBox #text10 {
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s10.png) no-repeat;
-  background-size: cover;
-}
-
-.circle_Box .tipBox #text11 {
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/s11.png) no-repeat;
-  background-size: cover;
-}
-
-.circle_Box .tipBox .tipBoxBg {
-  width: 650px;
-  height: 610px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/cir_bg.png) no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  margin-left: -320px;
-  z-index: 1;
-}
-
-.circle_Box .tipBox .tipText1 {
-  display: inline-block;
-  width: 256px;
-  height: 37px;
-  position: absolute;
-  top: 220px;
-  left: 50%;
-  opacity: 0;
-  color: #00ffc5;
-  text-align: center;
-  font-size: 22px;
-  margin-left: -128px;
-  z-index: 10;
-}
-
-.circle_Box .tipBox .tipText2 {
-  display: inline-block;
-  width: 355px;
-  height: 55px;
-  position: absolute;
-  top: 260px;
-  left: 50%;
-  color: #fff;
-  font-size: 34px;
-  text-align: center;
-  opacity: 0;
-  margin-left: -177px;
-  z-index: 10;
-  font-weight: bold;
-}
-
-.circle_Box .tipBox .tipText3 {
-  display: inline-block;
-  width: 353px;
-  height: 44px;
-  position: absolute;
-  top: 310px;
-  color: #fff;
-  font-size: 30px;
-  text-align: center;
-  left: 50%;
-  opacity: 0;
-  margin-left: -177px;
-  z-index: 10;
-}
-
-.circle_Box .tipBox .katong {
-  display: inline-block;
-  width: 300px;
-  height: 426px;
-  position: absolute;
-  top: 370px;
-  left: 81%;
-  opacity: 0;
-  margin-left: -177px;
-  z-index: 11;
-  cursor: pointer;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/katong.png) no-repeat top center;
-  background-size: cover;
-}
-
-.circle_Box .tipBox span.tipIcon_1 {
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/1.png) no-repeat;
-  background-size: cover;
-  border-radius: 50px;
-  position: absolute;
-  top: 355px;
-  left: 305px;
-  z-index: 11;
-  cursor: pointer;
-}
-
-.circle_Box .tipBox span.tipIcon_2 {
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/2.png) no-repeat;
-  background-size: cover;
-  border-radius: 50px;
-  position: absolute;
-  top: 355px;
-  left: 305px;
-  z-index: 11;
-  cursor: pointer;
-}
-
-.circle_Box .tipBox span.tipIcon_3 {
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/3.png) no-repeat;
-  background-size: cover;
-  border-radius: 50px;
-  position: absolute;
-  top: 355px;
-  left: 305px;
-  z-index: 11;
-  cursor: pointer;
-}
-
-.circle_Box .tipBox span.tipIcon_4 {
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/4.png) no-repeat;
-  background-size: cover;
-  border-radius: 50px;
-  position: absolute;
-  top: 355px;
-  left: 305px;
-  z-index: 11;
-  cursor: pointer;
-}
-
-.circle_Box .tipBox span.tipIcon_5 {
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/5.png) no-repeat;
-  background-size: cover;
-  border-radius: 50px;
-  position: absolute;
-  top: 355px;
-  left: 305px;
-  z-index: 11;
-  cursor: pointer;
-}
-
-.circle_Box .tipBox span.tipIcon_6 {
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/6.png) no-repeat;
-  background-size: cover;
-  border-radius: 50px;
-  position: absolute;
-  top: 355px;
-  left: 305px;
-  z-index: 11;
-  cursor: pointer;
-}
-
-.circle_Box .tipBox span.tipIcon_7 {
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/7.png) no-repeat;
-  background-size: cover;
-  border-radius: 50px;
-  position: absolute;
-  top: 355px;
-  left: 305px;
-  z-index: 11;
-  cursor: pointer;
-}
-
-.circle_Box .tipBox span.tipIcon_8 {
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/8.png) no-repeat;
-  background-size: cover;
-  border-radius: 50px;
-  position: absolute;
-  top: 355px;
-  left: 305px;
-  z-index: 11;
-  cursor: pointer;
-}
-
-.circle_Box .tipBox span.tipIcon_9 {
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/9.png) no-repeat;
-  background-size: cover;
-  border-radius: 50px;
-  position: absolute;
-  top: 355px;
-  left: 305px;
-  z-index: 11;
-  cursor: pointer;
-}
-
-.circle_Box .tipBox span.tipIcon_10 {
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/10.png) no-repeat;
-  background-size: cover;
-  border-radius: 50px;
-  position: absolute;
-  top: 355px;
-  left: 305px;
-  z-index: 11;
-  cursor: pointer;
-}
-
-.circle_Box .tipBox span.tipIcon_11 {
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/icon/11.png) no-repeat;
-  border-radius: 50px;
-  background-size: cover;
-  position: absolute;
-  top: 355px;
-  left: 305px;
-  z-index: 11;
-  cursor: pointer;
-}
-
-.circle_Box .tipBox span.tipIcon_12 {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  background: #ccc;
-  border-radius: 50px;
-  position: absolute;
-  top: 355px;
-  left: 305px;
-  z-index: 11;
-}
-
-.circle_Box .tipBox span.tipIcon_13 {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  background: #ccc;
-  border-radius: 50px;
-  position: absolute;
-  top: 500px;
-  left: 900px;
-  z-index: 11;
-}
-
-.circle_Box .tipBox span.tipIcon_14 {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  background: #ccc;
-  border-radius: 50px;
-  position: absolute;
-  top: 500px;
-  left: 900px;
-  z-index: 11;
-}
-
-.circle_Box .tipBox span.tipIcon_15 {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  background: #ccc;
-  border-radius: 50px;
-  position: absolute;
-  top: 500px;
-  left: 900px;
-  z-index: 11;
-}
-
-.circle_Box .tipBox .closeTip {
-  display: inline-block;
-  width: 78px;
-  height: 78px;
-  background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/closetip.png) no-repeat;
-  position: absolute;
-  bottom: 100px;
-  right: 200px;
-  cursor: pointer;
-  z-index: 11;
-}
-
-.circle_Box .tipBox .tipText4 {
-  display: inline-block;
-  width: 353px;
-  height: 44px;
-  position: absolute;
-  top: 360px;
-  color: #fff;
-  font-size: 30px;
-  text-align: center;
-  left: 50%;
-  opacity: 0;
-  margin-left: -177px;
-  z-index: 10;
-}
-
-.circle_Box .jiqirenAnimation {
-  -webkit-animation: jiqirenAnimation 1s infinite;
-  animation: jiqirenAnimation 1s infinite;
-}
-
-@-webkit-keyframes jiqirenAnimation {
-  0% {
-    background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/robot.png) no-repeat bottom left;
-  }
-
-  100% {
-    background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/robot1.png) no-repeat bottom left;
-  }
-}
-
-@keyframes jiqirenAnimation {
-  0% {
-    background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/robot.png) no-repeat bottom left;
-  }
-
-  100% {
-    background: url(http://www.chinaxiongan.cn/img/MAIN/2018/04/118293/images/7index/robot1.png) no-repeat bottom left;
-  }
+  width: auto;
+  height: auto;
+  bottom: 60px;
+  left: 10px;
 }
 #copyright {
   height: 60px;
@@ -1233,196 +224,134 @@ form {
   text-align: center;
   background-color: transparent;
 }
-.title-box {
-  height: 120px;
-  position: relative;
-  background-color: #f55b3d;
+.top-title {
+  background-color: #b60005;
+  height: 160px;
+  padding: 45px;
 }
 
-.title-box .logo {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
+.top-title ul {
+  color: white;
 }
 
-.nav-bar {
-  background-color: #f3353e;
-  background-image: linear-gradient(141deg, #f97140 0%, #f64f3d 51%, #f2293d 75%);
+.top-title ul a {
+  color: white;
 }
 
-.title-bar {
-  position: relative;
+.top-title ul li {
+  display: inline-block;
+  line-height: 64px;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.main {
+  display: block;
+  width: 100%;
+}
+
+.fl-box-1 {
+  margin-top: 60px;
+}
+
+.fl-box-1 .fr {
+  width: 560px;
+  text-align: left;
+}
+
+.fl-box-1 .fr h2 {
+  line-height: 74px;
+  font-size: 30px;
+  background-image: url('../images/mini-title.png');
   background-repeat: no-repeat;
   background-position: left bottom;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: left;
-  line-height: 58px;
-  color: #ec1b13;
   margin-bottom: 20px;
-  background-image: url('../images/title-line.png');
+  margin-top: 60px;
 }
 
-.title-bar .more {
-  background-image: url('../images/more.png');
-  position: absolute;
-  width: 40px;
-  height: 40px;
+.fl-box-1 .fr .info {
+  font-size: 18px;
+  line-height: 26px;
+  text-indent: 2em;
+  color: #888888;
+  height: 240px;
+}
+
+.title {
+  background-image: url('../images/mini-title.png');
   background-repeat: no-repeat;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background-position: center;
-}
-
-.title-bar .more a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.conn {
-  margin-top: 20px;
-}
-
-.mini-card {
-  width: 310px;
-}
-
-.mini-card .news-list {
-  height: 165px;
-  overflow: hidden;
-}
-
-.news-list li {
-  background-image: url('../images/doit.png');
-  background-repeat: no-repeat;
-  background-position: left center;
-  line-height: 28px;
-  text-align: left;
-  padding-left: 16px;
-  font-size: 16px;
-}
-
-.mini-card-box-3 .mini-card:nth-child(2) {
-  margin: 0 35px;
-}
-
-.mini-card-box .more {
-  background-size: 18px;
-}
-
-.mini-card video {
-  width: 310px;
-  height: 165px;
-  display: block;
-}
-
-.djwh {
-  background-color: #f4f6fb;
-  padding: 20px 0;
-  margin-top: 20px;
-}
-
-.ani-3d {
+  background-position: left bottom;
   position: relative;
-  background-color: #f32030;
-  background-image: linear-gradient(141deg, #fd8a2f 0%, #c74f2d 51%, #f31c30 75%);
+  line-height: 80px;
+  text-align: left;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
-.circle_Box {
+.title .more {
   position: absolute;
-  bottom: 0;
-  left: 0;
   right: 0;
+  font-size: 14px;
+  top: 0;
+  bottom: 0;
   margin: auto;
 }
 
-.card-box {
-  margin-top: 80px;
-}
-
-.card-box .card {
-  width: 240px;
-  margin: 0 5px;
-  height: 220px;
-  background-color: #f8fafd;
-  padding: 40px 0;
-}
-
-.card-box .card a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  left: 0;
-}
-
-.card-box .card img {
-  display: block;
-  margin: 0 auto;
-  transition-duration: 0.3s;
-  transition-property: transform;
-}
-
-.card-box .card:hover img {
-  transform: scale(1.1);
-}
-
-.hover-show-box .show {
-  width: 635px;
-  height: 384px;
-}
-
-.hover-show-box .right {
-  width: 365px;
+.fl-box-2 .fl {
   text-align: left;
+  width: 500px;
 }
 
-.hover-show-box .right .right-item {
-  padding: 5px 15px;
-  height: 96px;
-  cursor: pointer;
+.fl-box-2 .fl .top h3 {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 10px 0;
 }
 
-.hover-show-box .right .right-item .show-img {
-  display: none;
-}
-
-.hover-show-box .right .right-item.active {
-  background-color: #f5e8e8;
-}
-
-.hover-show-box .right h3 {
-  font-size: 20px;
+.fl-box-2 .fl .top p {
+  font-size: 16px;
   line-height: 24px;
-  margin-bottom: 8px;
-}
-
-.hover-show-box .right p {
-  font-size: 14px;
-  display: block;
-  height: 60px;
+  color: #9a9a9a;
   text-indent: 2em;
 }
 
-.mini-card-box {
-  margin-top: 30px;
+.fl-box-2 .fl .line {
+  border-bottom: 1px solid #ccc;
+  border-style: dashed;
+  margin: 15px 0;
 }
 
-.right-show-box {
-  position: fixed;
+.fl-box-2 .fl ul li {
+  font-size: 16px;
+  position: relative;
+  line-height: 42px;
+  background-image: url('../images/doit-2.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 15px;
+}
+
+.fl-box-2 .fl ul li span {
+  position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
   margin: auto;
-  height: 525px;
-  z-index: 99;
+  color: #999999;
+  font-size: 14px;
+}
+
+.show-box {
+  margin-top: 40px;
+}
+
+.show-box .show-item img,
+.show-box .show-item a {
+  display: block;
+}
+
+.show-box .show-item:nth-child(2) {
+  margin: 0 50px;
 }
 
