@@ -1,0 +1,260 @@
+<template lang="pug">
+.home
+  .top-title
+    .w1200.clear
+      img.fl.logo(src="@|logo.png|")
+      ul.fr
+        li
+          a(href="#") 关于我们
+        li
+          a(href="#") 新闻资讯
+        li
+          a(href="#") 党建文化
+        li
+          a(href="#") 招标采购
+        li
+          a(href="#") 信息公开
+        li
+          a(href="#") 人才团队
+        li
+          a(href="#") 控股公司
+  img.main(src="@|top.jpg|")
+  .w1200
+    .fl-box.fl-box-1.clear
+      .fl
+        img.main(src="@|show.png|")
+      .fr
+        h2 公司介绍
+        .info
+          p 中国雄安集团有限公司成立于2017年7月18日，是由河北省政府出资设立的省属重点骨干企业，雄安新区党工委、管委会代表河北省政府履行出资人职责。
+          p 2017年6月29日，国务院批准使用“中国雄安建设投资集团有限公司”名称；7月18日，中国雄安建设投资集团有限公司在河北省工商局注册登记，领取营业执照；2018年4月27日，中国雄安建设投资集团有限公司更名为中国雄安集团有限公司（以下简称“雄安集团”）。雄安集团初期注册资本金100亿元人民币，2020年注册资本金由100亿元调增至300亿元，新增部分首期30亿元资金已拨付到位。
+    .title
+      h2 公司动态
+      .more
+        a(href="#") 更多》
+    .fl-box.fl-box-2.clear
+      .fl
+        .top
+          h3
+            a(href="#") 雄安集团举办“两优一先”表彰暨成立四周年“一线行”特别活动
+          p 7月18日上午，在中国雄安集团成立四周年之际，雄安集团举办“两优一先”表彰暨成立四周年“一线行”活动。
+          .line
+        ul
+          li
+            a(href="#")
+              p 雄安郊野公园试运营开园迎客
+              span 2021-09-17
+          li
+            a(href="#")
+              p 雄安郊野公园试运营开园迎客
+              span 2021-09-17
+          li
+            a(href="#")
+              p 雄安郊野公园试运营开园迎客
+              span 2021-09-17
+          li
+            a(href="#")
+              p 雄安郊野公园试运营开园迎客
+              span 2021-09-17
+          li
+            a(href="#")
+              p 雄安郊野公园试运营开园迎客
+              span 2021-09-17
+      .fr
+        plug(_name="module12" _src="https://template.owo.ink/c7bec15537956853.owo")
+    .title
+      h2 重大项目
+      .more
+        a(href="#") 更多》
+    plug(_name="module141" _src="https://template.owo.ink/dd34f42b0698caf4.owo")
+    .show-box.clear
+      .show-item.fl
+        a(href="#")
+          img(src="@|gg.png|")
+      .show-item.fl
+        a(href="#")
+          img(src="@|gg.png|")
+      .show-item.fl
+        a(href="#")
+          img(src="@|gg.png|")
+    .news-box.clear
+      .news-item.fl
+        .title
+          h2 公司动态
+          .more
+            a(href="#") 更多》
+        ul
+          li
+            a(href="#")
+              p 雄安郊野公园试运营开园迎客
+          li
+            a(href="#")
+              p 雄安郊野公园试运营开园迎客
+          li
+            a(href="#")
+              p 雄安郊野公园试运营开园迎客
+          li
+            a(href="#")
+              p 雄安郊野公园试运营开园迎客
+          li
+            a(href="#")
+              p 雄安郊野公园试运营开园迎客
+    .news-item.fl
+        .title
+          h2 公司动态
+          .more
+            a(href="#") 更多》
+        ul
+          li
+            a(href="#")
+              p 雄安郊野公园试运营开园迎客
+          li
+            a(href="#")
+              p 雄安郊野公园试运营开园迎客
+          li
+            a(href="#")
+              p 雄安郊野公园试运营开园迎客
+          li
+            a(href="#")
+              p 雄安郊野公园试运营开园迎客
+          li
+            a(href="#")
+              p 雄安郊野公园试运营开园迎客
+    .news-item.fl
+        .title
+          h2 公司动态
+          .more
+            a(href="#") 更多》
+        video(src="@||")
+  plug(_name="module2" _src="https://template.owo.ink/0d0151b82309f7a7.owo")
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+    }
+  }
+</script>
+
+
+<style lang="less">
+  .top-title {
+    background-color: #b60005;
+    height: 160px;
+    padding: 45px;
+    ul {
+      color: white;
+      a {
+        color: white;
+      }
+      li {
+        display: inline-block;
+        line-height: 64px;
+        font-size: 16px;
+        margin: 0 10px;
+      }
+    }
+  }
+  .main {
+    display: block;
+    width: 100%;
+  }
+  .fl-box-1 {
+    margin-top: 60px;
+    .fr {
+      width: 560px;
+      text-align: left;
+      h2 {
+        line-height: 74px;
+        font-size: 30px;
+        background-image: url('@|mini-title.png|');
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        margin-bottom: 20px;
+        margin-top: 60px;
+      }
+      .info {
+        font-size: 18px;
+        line-height: 26px;
+        text-indent: 2em;
+        color: #888888;
+        height: 240px;
+      }
+    }
+  }
+  .title {
+    background-image: url('@|mini-title.png|');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: relative;
+    line-height: 80px;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    .more {
+      position: absolute;
+      right: 0;
+      font-size: 14px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+  .fl-box-2 {
+    .fl {
+      text-align: left;
+      width: 500px;
+      .top {
+        h3 {
+          font-size: 18px;
+          line-height: 30px;
+          margin: 10px 0;
+        }
+        p {
+          font-size: 16px;
+          line-height: 24px;
+          color: #9a9a9a;
+          text-indent: 2em;
+        }
+      }
+      .line {
+        border-bottom: 1px solid #ccc;
+        border-style: dashed;
+        margin: 15px 0;
+      }
+      ul {
+        li {
+          font-size: 16px;
+          position: relative;
+          line-height: 42px;
+          background-image: url('@|doit-2.png|');
+          background-repeat: no-repeat;
+          background-position: left center;
+          padding-left: 15px;
+          span {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            color: #999999;
+            font-size: 14px;
+          }
+        }
+        
+      }
+    }
+  }
+  .show-box {
+    margin-top: 40px;
+    .show-item {
+      img, a {
+        display: block;
+      }
+    }
+    .show-item:nth-child(2) {
+      margin: 0 50px;
+    }
+  }
+</style>
