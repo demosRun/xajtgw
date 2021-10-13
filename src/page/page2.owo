@@ -99,7 +99,7 @@
           li
             a(href="#")
               p 雄安郊野公园试运营开园迎客
-    .news-item.fl
+      .news-item.fl
         .title
           h2 公司动态
           .more
@@ -120,12 +120,13 @@
           li
             a(href="#")
               p 雄安郊野公园试运营开园迎客
-    .news-item.fl
+      .news-item.fl
         .title
           h2 公司动态
           .more
             a(href="#") 更多》
-        video(src="@||")
+        video(src="https://cunchu.site/show/mp4/dandelion.mp4" controls="controls")
+    plug(_name="module2" _src="./src/page/xionganBottom.owo")
   plug(_name="module2" _src="https://template.owo.ink/0d0151b82309f7a7.owo")
 </template>
 
@@ -247,7 +248,7 @@
     }
   }
   .show-box {
-    margin-top: 40px;
+    margin-top: 60px;
     .show-item {
       img, a {
         display: block;
@@ -256,5 +257,32 @@
     .show-item:nth-child(2) {
       margin: 0 50px;
     }
+  }
+  .news-item {
+    width: 30%;
+    ul {
+      text-align: left;
+      font-size: 16px;
+      line-height: 38px;
+      height: 190;
+      overflow: hidden;
+    }
+    li {
+      background-image: url('@|doit-3.png|');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 15px;
+    }
+    video {
+      width: 360px;
+      height: 190px;
+      display: block;
+    }
+  }
+  .news-item:nth-child(2) {
+    margin: 0 60px;
+  }
+  .news-box {
+    margin-top: 60px;
   }
 </style>

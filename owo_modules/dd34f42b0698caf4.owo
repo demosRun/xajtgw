@@ -5,17 +5,16 @@
         <div class="swiper-slide card" :for="data.swiperList">
           <div class="swiper-item" >
             <a href="#">
-              <img width="300" height="170" src="{value.image}"/>
+              <img width="280" height="170" src="{value.image}"/>
+              <h3>在建项目四</h3>
               <div class="image-title">{value.title}</div>
-              <!-- 播放按钮 -->
-              <img class="play-button" src="https://cunchu.site/owo/material/tuopin/play.png">
             </a>
           </div>
         </div>
       </div>
     </div>
-    <img src="https://cunchu.site/owo/material/tuopin/left.png" class="swiper-button swiper-button-next" o-tap="swiperNext"/>
-    <img src="https://cunchu.site/owo/material/tuopin/left.png" class="swiper-button swiper-button-prev" o-tap="swiperPrev"/>
+    <img src="@|left.png|" class="swiper-button swiper-button-next" o-tap="swiperNext"/>
+    <img src="@|left.png|" class="swiper-button swiper-button-prev" o-tap="swiperPrev"/>
   </div>
 </template>
 
@@ -48,16 +47,16 @@
 
 <style lang="less">
   .LbWMGSGs {
-    height: 210px;
-    width: 1300px;
-    margin-left: -50px;
+    height: 240px;
+    width: 1260px;
+    margin-left: -35px;
     position: relative;
     .swiper-container {
       height: 100%;
-      width: 1250px;
+      width: 1210px;
       position: relative;
       .swiper-item {
-        width: 300px;
+        width: 280px;
         height: 100%;
         position: absolute;
         left: 0;
@@ -65,6 +64,15 @@
         top: 0;
         bottom: 0;
         margin: auto;
+        border: 1px solid #ccc;
+        text-align: left;
+        h3 {
+          font-size: 18px;
+          color: #b60005;
+          padding: 0 10px;
+          line-height: 30px;
+          font-weight: normal;
+        }
       }
     }
     .swiper-wrapper {
@@ -113,6 +121,7 @@
     font-size: 16px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 10px;
   }
   .swiper-slide {
     position: relative;

@@ -1,0 +1,122 @@
+<template>
+<div class="footerNav" style="display: block;"><div class="w1200">
+    <div class="footerLinkBox clearfix">
+    	<p><b>集团概述</b><a href="/GB/418892/index.html#1" target="_blank">集团介绍</a>|<a href="/GB/418892/index.html#2" target="_blank">组织架构</a>|<a href="/GB/418892/index.html#3" target="_blank">职责定位</a>|<a href="/GB/418892/index.html#4" target="_blank">企业文化</a>|<a href="/GB/418892/index.html#6" target="_blank">联系我们</a>|<a href="http://www.chinaxiongan.cn/n1/2019/0228/c418902-30908246.html" target="_blank">纪检监察监督举报</a></p><p></p>
+ <p><b>探索雄安</b><a href="/GB/419268/419269/index.html" target="_blank">智慧公交</a>|<a href="/GB/419268/419271/index.html" target="_blank">区块链</a>|<a href="/GB/419268/419272/index.html" target="_blank">千年秀林</a>|<a href="/GB/419268/419273/index.html" target="_blank">建设者生活服务中心</a>|<a href="/GB/419268/419274/index.html" target="_blank">市民服务中心</a>|<a href="/GB/419268/419275/index.html" target="_blank">数字城市</a>|<a href="/GB/419268/419276/index.html" target="_blank">智慧工地</a>|<a href="/GB/419268/419277/index.html" target="_blank">装配式建筑</a>|<a href="http://www.chinaxiongan.cn/GB/425251/index.html" target="_blank">唐河污水库</a> <span style="color:#333;"><a href="/GB/index.html" target="_blank">more</a></span></p>
+ <p><b>人民雄安</b><a href="http://www.rmxiongan.com/GB/383581/index.html" target="_blank">雄安资讯</a>|<a href="http://www.rmxiongan.com/GB/383579/index.html" target="_blank">人民日报说雄安</a>|<a href="http://www.rmxiongan.com/GB/384008/" target="_blank">政策解读</a>|<a href="http://www.rmxiongan.com/GB/383574/index.html" target="_blank">图说雄安</a>|<a href="http://www.rmxiongan.com/GB/383575/index.html" target="_blank">绿色雄安</a>|<a href="http://www.rmxiongan.com/GB/383576/index.html" target="_blank">人文历史</a>|<a href="http://www.rmxiongan.com/GB/383578/index.html" target="_blank">聚焦京津冀</a>|<a href="http://www.rmxiongan.com/GB/383573/index.html" target="_blank">新雄安人</a>|<a href="http://en.rmxiongan.com/" target="_blank">English</a></p>
+ <p class="fLink"><b>友情链接</b><a href="http://www.people.com.cn/" target="_blank">人民网</a>|<a href="http://www.xinhuanet.com/" target="_blank">新华网</a>|<a href="http://www.cctv.com" target="_blank">央视网</a>|<a href="http://www.cri.cn/" target="_blank">国际在线</a>|<a href="http://cn.chinadaily.com.cn/" target="_blank">中国日报网</a>|<a href="http://www.china.com.cn/" target="_blank">中国网</a>|<a href="http://www.ce.cn/" target="_blank">中国经济网</a>|<a href="http://www.gmw.cn/" target="_blank">光明网</a>|<a href="http://www.cnr.cn/" target="_blank">央广网</a>|<a href="http://www.chinanews.com/" target="_blank">中国新闻网</a>|<a href="http://www.hebnews.cn/" target="_blank">河北新闻网</a>|<a href="http://www.hebei.com.cn/" target="_blank">长城网</a></p>
+ <p><b>政府网站</b><a href="http://www.gov.cn/" target="_blank">中国政府网</a>|<a href="http://www.beijing.gov.cn/" target="_blank">北京市人民政府网站</a>|<a href="http://www.tj.gov.cn/" target="_blank">天津市人民政府网站</a>|<a href="http://www.hebei.gov.cn/" target="_blank">河北省人民政府网站</a>|<a href="http://www.xiongan.gov.cn/" target="_blank">中国雄安官网</a></p>
+    </div>
+</div>
+</div>
+</template>
+
+<script>
+  module.exports = {
+
+  }
+</script>
+
+
+<style lang="less">
+.footerNav{
+	width:100%;
+	background:#f7faff;
+	color:#000;
+	position: relative;
+    z-index: 3;
+	display:none;
+}
+.footerNav a:link,.footerNav a:hover,.footerNav a:visited{
+	color:#000;
+}
+.footerNav div.footerLinkBox{
+	width:1200px;
+	padding-top: 80px;
+    text-align: left;
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+    line-height: 30px;
+}
+.footerNav div.footerLinkBox p{
+	width:100%;
+	padding:7px 0;
+	font-size:16px;
+	color:#e6eaeb;
+}
+.footerNav div.footerLinkBox p b{
+	font-weight:bold;
+	font-size:16px;
+	margin-right:45px;
+	color:#000;
+}
+.footerNav div.footerLinkBox p a{
+	margin:0 9px;
+	color:#000;
+	
+}
+.footerNav div.footerLinkBox dl{
+	display:block;
+	width:248px;
+	float:left;
+	border-right:1px solid #8dbede;
+	text-align:center;
+}
+.footerNav div.footerLinkBox dl.link04{
+	border-right:none;
+}
+.footerNav div.footerLinkBox dl.link02 dt{
+	background:#228abe;
+}
+.footerNav div.footerLinkBox dl.link03 dt{
+	background:#399bb9;
+}
+.footerNav div.footerLinkBox dl.link04 dt{
+	background:#399bb9;
+}
+.footerNav div.footerLinkBox dl dt{
+	display:inline-block;
+	width:150px;
+	height:40px;
+	background:#2f83c1;
+	border-radius:20px;
+	font:normal 18px/40px "SimHei";
+	margin-bottom:10px;
+	text-align:center;
+}
+.footerNav div.footerLinkBox dl dd{
+	font:normal 16px/24px "SimHei";
+	text-align:left;
+	width:110px;
+	margin:0 auto;
+	text-align:center;
+}
+.footerNav div.footerCopyBox{
+	width:1000px;
+	text-align:center;
+	margin-top:30px;
+	padding: 20px 0 20px 0;
+	height:100px;
+	border-top:2px solid #5b5b5b;
+}
+.footerLogo{
+  float:left;
+  display:none;
+}
+.footerText{
+  float:right;
+  width:955px;
+}
+.footerText p{
+  font-size:14px;
+  font-weight:bold;
+  text-align:right;
+  padding:5px 0;
+}
+.footerText p b{
+  margin:0 5px;
+}
+.footerText p.copyright{
+  font-weight:normal;
+}
+</style>

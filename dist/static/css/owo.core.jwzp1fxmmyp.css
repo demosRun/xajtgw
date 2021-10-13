@@ -124,20 +124,20 @@ li {
   height: 10px;
 }
 .LbWMGSGs {
-  height: 210px;
-  width: 1300px;
-  margin-left: -50px;
+  height: 240px;
+  width: 1260px;
+  margin-left: -35px;
   position: relative;
 }
 
 .LbWMGSGs .swiper-container {
   height: 100%;
-  width: 1250px;
+  width: 1210px;
   position: relative;
 }
 
 .LbWMGSGs .swiper-container .swiper-item {
-  width: 300px;
+  width: 280px;
   height: 100%;
   position: absolute;
   left: 0;
@@ -145,6 +145,16 @@ li {
   top: 0;
   bottom: 0;
   margin: auto;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.LbWMGSGs .swiper-container .swiper-item h3 {
+  font-size: 18px;
+  color: #b60005;
+  padding: 0 10px;
+  line-height: 30px;
+  font-weight: normal;
 }
 
 .LbWMGSGs .swiper-wrapper {
@@ -198,6 +208,7 @@ li {
   font-size: 16px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .LbWMGSGs .swiper-slide {
@@ -210,6 +221,125 @@ li {
   height: auto;
   bottom: 60px;
   left: 10px;
+}
+.footerNav {
+  width: 100%;
+  background: #f7faff;
+  color: #000;
+  position: relative;
+  z-index: 3;
+  display: none;
+}
+
+.footerNav a:link,
+.footerNav a:hover,
+.footerNav a:visited {
+  color: #000;
+}
+
+.footerNav div.footerLinkBox {
+  width: 1200px;
+  padding-top: 80px;
+  text-align: left;
+  border-bottom: 2px solid black;
+  padding-bottom: 30px;
+  line-height: 30px;
+}
+
+.footerNav div.footerLinkBox p {
+  width: 100%;
+  padding: 7px 0;
+  font-size: 16px;
+  color: #e6eaeb;
+}
+
+.footerNav div.footerLinkBox p b {
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 45px;
+  color: #000;
+}
+
+.footerNav div.footerLinkBox p a {
+  margin: 0 9px;
+  color: #000;
+}
+
+.footerNav div.footerLinkBox dl {
+  display: block;
+  width: 248px;
+  float: left;
+  border-right: 1px solid #8dbede;
+  text-align: center;
+}
+
+.footerNav div.footerLinkBox dl.link04 {
+  border-right: none;
+}
+
+.footerNav div.footerLinkBox dl.link02 dt {
+  background: #228abe;
+}
+
+.footerNav div.footerLinkBox dl.link03 dt {
+  background: #399bb9;
+}
+
+.footerNav div.footerLinkBox dl.link04 dt {
+  background: #399bb9;
+}
+
+.footerNav div.footerLinkBox dl dt {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  background: #2f83c1;
+  border-radius: 20px;
+  font: normal 18px/40px "SimHei";
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footerNav div.footerLinkBox dl dd {
+  font: normal 16px/24px "SimHei";
+  text-align: left;
+  width: 110px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footerNav div.footerCopyBox {
+  width: 1000px;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px 0 20px 0;
+  height: 100px;
+  border-top: 2px solid #5b5b5b;
+}
+
+.footerNav .footerLogo {
+  float: left;
+  display: none;
+}
+
+.footerNav .footerText {
+  float: right;
+  width: 955px;
+}
+
+.footerNav .footerText p {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: right;
+  padding: 5px 0;
+}
+
+.footerNav .footerText p b {
+  margin: 0 5px;
+}
+
+.footerNav .footerText p.copyright {
+  font-weight: normal;
 }
 #copyright {
   height: 60px;
@@ -342,8 +472,13 @@ li {
   font-size: 14px;
 }
 
+.fl-box-2 .fl ul li p {
+  height: 42px;
+  overflow: hidden;
+}
+
 .show-box {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .show-box .show-item img,
@@ -353,5 +488,40 @@ li {
 
 .show-box .show-item:nth-child(2) {
   margin: 0 50px;
+}
+
+.news-item {
+  width: 30%;
+}
+
+.news-item ul {
+  text-align: left;
+  font-size: 16px;
+  line-height: 38px;
+  height: 190;
+  overflow: hidden;
+}
+
+.news-item li {
+  background-image: url('../images/doit-3.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 15px;
+  height: 38px;
+  overflow: hidden;
+}
+
+.news-item video {
+  width: 360px;
+  height: 190px;
+  display: block;
+}
+
+.news-item:nth-child(2) {
+  margin: 0 60px;
+}
+
+.news-box {
+  margin-top: 60px;
 }
 
